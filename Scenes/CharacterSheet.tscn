@@ -1,7 +1,6 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://Scripts/CharacterSheet.gd" type="Script" id=1]
-[ext_resource path="res://icon.png" type="Texture" id=2]
 
 [sub_resource type="StyleBoxFlat" id=3]
 content_margin_left = 5.0
@@ -276,7 +275,7 @@ margin_right = -3.05176e-05
 margin_bottom = -0.160004
 
 [node name="VidaMáxima" type="LineEdit" parent="Vida"]
-margin_right = 184.0
+margin_right = 183.0
 margin_bottom = 24.0
 align = 1
 placeholder_text = "Vida Máxima"
@@ -284,7 +283,7 @@ caret_blink = true
 
 [node name="VidaAtual" type="LineEdit" parent="Vida"]
 margin_top = 28.0
-margin_right = 184.0
+margin_right = 183.0
 margin_bottom = 52.0
 align = 1
 placeholder_text = "Vida Atual"
@@ -292,7 +291,7 @@ caret_blink = true
 
 [node name="VidaTemp" type="LineEdit" parent="Vida"]
 margin_top = 56.0
-margin_right = 184.0
+margin_right = 183.0
 margin_bottom = 80.0
 align = 1
 placeholder_text = "Vida Temporária"
@@ -883,24 +882,14 @@ __meta__ = {
 "_edit_use_anchors_": true
 }
 
-[node name="MenuButton" type="MenuButton" parent="."]
-anchor_left = 0.867
-anchor_top = 0.889
-anchor_right = 0.993
-anchor_bottom = 0.986
-margin_left = -0.200012
-margin_top = -0.0800171
-margin_right = 0.199951
-margin_bottom = 0.0799561
-enabled_focus_mode = 0
-icon = ExtResource( 2 )
-items = [ "Equipamento", null, 0, false, false, 0, 0, null, "", false, "Item 1", null, 0, false, false, 1, 0, null, "", false, "Item 2", null, 0, false, false, 2, 0, null, "", false ]
-
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
-margin_left = 408.0
-margin_top = 136.0
-margin_right = 466.0
-margin_bottom = 188.0
+anchor_left = 0.68
+anchor_top = 0.189
+anchor_right = 0.773
+anchor_bottom = 0.3
+margin_top = -0.0800018
+margin_right = 2.19995
+margin_bottom = -28.0
 
 [node name="LineEdit" type="LineEdit" parent="VBoxContainer"]
 margin_right = 58.0
@@ -921,3 +910,42 @@ margin_right = 58.0
 margin_bottom = 80.0
 align = 1
 placeholder_text = "Insp."
+
+[node name="Button" type="Button" parent="."]
+anchor_left = 0.827
+anchor_top = 0.889
+anchor_right = 0.96
+anchor_bottom = 0.967
+margin_left = -0.200012
+margin_top = -0.0800171
+margin_bottom = -0.240051
+text = "Mais"
+
+[node name="PopupMenu" type="PopupMenu" parent="Button"]
+margin_right = 20.0
+margin_bottom = 20.0
+items = [ "Item 0", null, 0, false, false, 0, 0, null, "", false, "Item 1", null, 0, false, false, 1, 0, null, "", false ]
+
+[node name="Inventário" type="TextEdit" parent="."]
+visible = false
+anchor_left = 0.04
+anchor_top = 0.044
+anchor_right = 0.947
+anchor_bottom = 0.956
+margin_top = 0.319998
+margin_right = -0.200012
+margin_bottom = -0.320007
+
+[node name="Fechar" type="Button" parent="Inventário"]
+anchor_left = 0.868
+anchor_top = 0.89
+anchor_right = 0.978
+anchor_bottom = 0.982
+margin_left = -0.192017
+margin_top = 0.159973
+margin_right = -0.0320435
+margin_bottom = -0.192017
+
+[connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]
+[connection signal="index_pressed" from="Button/PopupMenu" to="." method="_on_PopupMenu_index_pressed"]
+[connection signal="pressed" from="Inventário/Fechar" to="." method="_on_Fechar_pressed"]

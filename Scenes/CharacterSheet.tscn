@@ -110,285 +110,143 @@ expand_to_text_length = true
 placeholder_text = "EXP"
 caret_blink = true
 
-[node name="Habilidades" type="VBoxContainer" parent="."]
+[node name="Habilidades" type="HBoxContainer" parent="."]
 anchor_left = 0.027
-anchor_top = 0.189
-anchor_right = 0.12
-anchor_bottom = 0.717
+anchor_top = 0.167
+anchor_right = 0.66
+anchor_bottom = 0.25
 margin_left = -0.200001
-margin_top = -0.0799866
-margin_right = 4.0
-margin_bottom = -0.23999
+margin_top = -0.240005
+margin_right = -3.05176e-05
 
-[node name="Força" type="LineEdit" parent="Habilidades"]
+[node name="LineEdit" type="LineEdit" parent="Habilidades"]
 margin_right = 60.0
 margin_bottom = 60.0
 rect_min_size = Vector2( 60, 60 )
 custom_colors/font_color = Color( 1, 0, 0, 1 )
 align = 1
 placeholder_text = "For"
-caret_blink = true
 
-[node name="LineEdit" type="LineEdit" parent="Habilidades/Força"]
-anchor_left = 1.067
-anchor_right = 2.033
-anchor_bottom = 0.4
-margin_left = -0.0200043
-margin_top = -1.52588e-05
-margin_right = 0.0200043
-margin_bottom = -1.52588e-05
+[node name="LineEdit" type="LineEdit" parent="Habilidades/LineEdit"]
+anchor_top = 1.067
+anchor_right = 0.967
+anchor_bottom = 1.467
+margin_top = -0.0200043
+margin_right = -0.0200043
+margin_bottom = -0.0200043
+custom_colors/font_color = Color( 1, 0, 0, 1 )
+align = 1
 placeholder_text = "Mod."
 
-[node name="Destreza" type="LineEdit" parent="Habilidades"]
-margin_top = 64.0
-margin_right = 60.0
-margin_bottom = 124.0
+[node name="LineEdit2" type="LineEdit" parent="Habilidades"]
+margin_left = 64.0
+margin_right = 124.0
+margin_bottom = 60.0
 rect_min_size = Vector2( 60, 60 )
-custom_colors/font_color = Color( 0, 0.576471, 1, 1 )
+custom_colors/font_color = Color( 0, 0.976471, 1, 1 )
 align = 1
 placeholder_text = "Des"
-caret_blink = true
 
-[node name="LineEdit" type="LineEdit" parent="Habilidades/Destreza"]
-anchor_left = 1.067
-anchor_right = 2.0
-anchor_bottom = 0.4
-margin_left = -0.0200043
-margin_top = -1.52588e-05
-margin_right = 2.0
-margin_bottom = -1.52588e-05
+[node name="LineEdit" type="LineEdit" parent="Habilidades/LineEdit2"]
+anchor_top = 1.067
+anchor_right = 0.967
+anchor_bottom = 1.467
+margin_top = -0.0200043
+margin_right = -0.0200043
+margin_bottom = -0.0200043
+custom_colors/font_color = Color( 0, 0.964706, 1, 1 )
+align = 1
 placeholder_text = "Mod."
 
-[node name="Constituição" type="LineEdit" parent="Habilidades"]
-margin_top = 128.0
-margin_right = 60.0
-margin_bottom = 188.0
+[node name="LineEdit3" type="LineEdit" parent="Habilidades"]
+margin_left = 128.0
+margin_right = 188.0
+margin_bottom = 60.0
 rect_min_size = Vector2( 60, 60 )
-custom_colors/font_color = Color( 0.101961, 1, 0, 1 )
+custom_colors/font_color = Color( 0.00784314, 1, 0, 1 )
 align = 1
 placeholder_text = "Con"
-caret_blink = true
 
-[node name="LineEdit" type="LineEdit" parent="Habilidades/Constituição"]
-anchor_left = 1.067
-anchor_right = 2.0
-anchor_bottom = 0.4
-margin_left = -0.0200043
-margin_right = 2.0
+[node name="LineEdit" type="LineEdit" parent="Habilidades/LineEdit3"]
+anchor_top = 1.067
+anchor_right = 0.967
+anchor_bottom = 1.467
+margin_top = -0.0200043
+margin_right = -0.0200043
+margin_bottom = -0.0200043
+custom_colors/font_color = Color( 0.141176, 1, 0, 1 )
+align = 1
 placeholder_text = "Mod."
 
-[node name="Inteligência" type="LineEdit" parent="Habilidades"]
-margin_top = 192.0
-margin_right = 60.0
-margin_bottom = 252.0
+[node name="LineEdit4" type="LineEdit" parent="Habilidades"]
+margin_left = 192.0
+margin_right = 252.0
+margin_bottom = 60.0
 rect_min_size = Vector2( 60, 60 )
-custom_colors/font_color = Color( 1, 0.423529, 0, 1 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
 align = 1
 placeholder_text = "Int"
-caret_blink = true
 
-[node name="LineEdit" type="LineEdit" parent="Habilidades/Inteligência"]
-anchor_left = 1.067
-anchor_right = 2.0
-anchor_bottom = 0.4
-margin_left = -0.0200043
-margin_right = 2.0
+[node name="LineEdit" type="LineEdit" parent="Habilidades/LineEdit4"]
+anchor_top = 1.067
+anchor_right = 0.967
+anchor_bottom = 1.467
+margin_top = -0.0200043
+margin_right = -0.0200043
+margin_bottom = -0.0200043
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+align = 1
 placeholder_text = "Mod."
 
-[node name="Sabedoria" type="LineEdit" parent="Habilidades"]
-margin_top = 256.0
-margin_right = 60.0
-margin_bottom = 316.0
+[node name="LineEdit5" type="LineEdit" parent="Habilidades"]
+margin_left = 256.0
+margin_right = 316.0
+margin_bottom = 60.0
 rect_min_size = Vector2( 60, 60 )
-custom_colors/font_color = Color( 0.592157, 0, 1, 1 )
+custom_colors/font_color = Color( 0.439216, 0, 1, 1 )
 align = 1
 placeholder_text = "Sab"
-caret_blink = true
 
-[node name="LineEdit" type="LineEdit" parent="Habilidades/Sabedoria"]
-anchor_left = 1.067
-anchor_right = 2.033
-anchor_bottom = 0.4
-margin_left = -0.0200043
-margin_right = 0.0200043
+[node name="LineEdit" type="LineEdit" parent="Habilidades/LineEdit5"]
+anchor_top = 1.067
+anchor_right = 0.967
+anchor_bottom = 1.467
+margin_top = -0.0200043
+margin_right = -0.019989
+margin_bottom = -0.0200043
+custom_colors/font_color = Color( 0.415686, 0, 1, 1 )
+align = 1
 placeholder_text = "Mod."
 
-[node name="Carisma" type="LineEdit" parent="Habilidades"]
-margin_top = 320.0
-margin_right = 60.0
-margin_bottom = 380.0
+[node name="LineEdit6" type="LineEdit" parent="Habilidades"]
+margin_left = 320.0
+margin_right = 380.0
+margin_bottom = 60.0
 rect_min_size = Vector2( 60, 60 )
-custom_colors/font_color = Color( 1, 1, 0, 1 )
+custom_colors/font_color = Color( 0.933333, 1, 0, 1 )
 align = 1
 placeholder_text = "Car"
-caret_blink = true
 
-[node name="LineEdit" type="LineEdit" parent="Habilidades/Carisma"]
-anchor_left = 1.067
-anchor_right = 2.0
-anchor_bottom = 0.4
-margin_left = -0.0200043
-margin_right = 2.0
+[node name="LineEdit" type="LineEdit" parent="Habilidades/LineEdit6"]
+anchor_top = 1.067
+anchor_right = 0.967
+anchor_bottom = 1.467
+margin_top = -0.0200043
+margin_right = -0.0200043
+margin_bottom = -0.0200043
+custom_colors/font_color = Color( 1, 0.937255, 0, 1 )
+align = 1
 placeholder_text = "Mod."
 
-[node name="CIM" type="HBoxContainer" parent="."]
-anchor_left = 0.333
-anchor_top = 0.189
-anchor_right = 0.637
-anchor_bottom = 0.244
-margin_left = 0.199997
-margin_top = -0.0800018
-margin_right = -0.200012
-margin_bottom = 0.319992
-
-[node name="CA" type="LineEdit" parent="CIM"]
-margin_right = 58.0
-margin_bottom = 40.0
-align = 1
-placeholder_text = "CA"
-caret_blink = true
-
-[node name="Inici" type="LineEdit" parent="CIM"]
-margin_left = 62.0
-margin_right = 120.0
-margin_bottom = 40.0
-align = 1
-placeholder_text = "Iniciativa"
-caret_blink = true
-
-[node name="Mov" type="LineEdit" parent="CIM"]
-margin_left = 124.0
-margin_right = 182.0
-margin_bottom = 40.0
-align = 1
-placeholder_text = "Movimento"
-caret_blink = true
-
-[node name="Vida" type="VBoxContainer" parent="."]
-anchor_left = 0.333
-anchor_top = 0.267
-anchor_right = 0.64
-anchor_bottom = 0.378
-margin_left = 0.199997
-margin_top = -0.240021
-margin_right = -3.05176e-05
-margin_bottom = -0.160004
-
-[node name="VidaMáxima" type="LineEdit" parent="Vida"]
-margin_right = 183.0
-margin_bottom = 24.0
-align = 1
-placeholder_text = "Vida Máxima"
-caret_blink = true
-
-[node name="VidaAtual" type="LineEdit" parent="Vida"]
-margin_top = 28.0
-margin_right = 183.0
-margin_bottom = 52.0
-align = 1
-placeholder_text = "Vida Atual"
-caret_blink = true
-
-[node name="VidaTemp" type="LineEdit" parent="Vida"]
-margin_top = 56.0
-margin_right = 183.0
-margin_bottom = 80.0
-align = 1
-placeholder_text = "Vida Temporária"
-caret_blink = true
-
-[node name="DadosVida" type="VBoxContainer" parent="."]
-anchor_left = 0.333
-anchor_top = 0.389
-anchor_right = 0.43
-anchor_bottom = 0.461
-margin_left = 0.199997
-margin_top = -0.0800171
-margin_bottom = 0.0799866
-
-[node name="MaxDado" type="LineEdit" parent="DadosVida"]
-margin_right = 58.0
-margin_bottom = 24.0
-align = 1
-placeholder_text = "Max.Dados"
-caret_blink = true
-
-[node name="DadoVida" type="LineEdit" parent="DadosVida"]
-margin_top = 28.0
-margin_right = 58.0
-margin_bottom = 52.0
-align = 1
-placeholder_text = "D.Vida"
-caret_blink = true
-
-[node name="TesteMorte" type="GridContainer" parent="."]
-anchor_left = 0.44
-anchor_top = 0.389
-anchor_right = 0.667
-anchor_bottom = 0.461
-margin_left = -3.05176e-05
-margin_top = -0.0800171
-margin_right = -0.200043
-margin_bottom = 0.0799866
-theme = SubResource( 2 )
-custom_constants/vseparation = -1
-custom_constants/hseparation = -1
-columns = 3
-
-[node name="Suc1" type="CheckBox" parent="TesteMorte"]
-margin_right = 22.0
-margin_bottom = 26.0
-focus_mode = 0
-enabled_focus_mode = 0
-
-[node name="Suc2" type="CheckBox" parent="TesteMorte"]
-margin_left = 21.0
-margin_right = 43.0
-margin_bottom = 26.0
-focus_mode = 0
-enabled_focus_mode = 0
-
-[node name="Suc3" type="CheckBox" parent="TesteMorte"]
-margin_left = 42.0
-margin_right = 120.0
-margin_bottom = 26.0
-focus_mode = 0
-enabled_focus_mode = 0
-text = "Sucesso"
-
-[node name="Fal1" type="CheckBox" parent="TesteMorte"]
-margin_top = 25.0
-margin_right = 22.0
-margin_bottom = 51.0
-focus_mode = 0
-enabled_focus_mode = 0
-
-[node name="Fal2" type="CheckBox" parent="TesteMorte"]
-margin_left = 21.0
-margin_top = 25.0
-margin_right = 43.0
-margin_bottom = 51.0
-focus_mode = 0
-enabled_focus_mode = 0
-
-[node name="Fal3" type="CheckBox" parent="TesteMorte"]
-margin_left = 42.0
-margin_top = 25.0
-margin_right = 120.0
-margin_bottom = 51.0
-focus_mode = 0
-enabled_focus_mode = 0
-text = "Falha"
-
 [node name="Salva-Guardas" type="VBoxContainer" parent="."]
-anchor_left = 0.027
-anchor_top = 0.722
-anchor_right = 0.12
-anchor_bottom = 0.95
-margin_left = -0.200001
-margin_top = 0.159973
-margin_right = 2.0
-margin_bottom = -6.10352e-05
+anchor_left = 0.667
+anchor_top = 0.167
+anchor_right = 0.76
+anchor_bottom = 0.394
+margin_left = -0.200043
+margin_top = -0.240005
+margin_right = 1.99997
+margin_bottom = 0.319977
 
 [node name="Força" type="LineEdit" parent="Salva-Guardas"]
 margin_right = 58.0
@@ -472,16 +330,16 @@ margin_right = -0.0240021
 text = "Carisma"
 
 [node name="Perícias" type="GridContainer" parent="."]
-anchor_left = 0.307
-anchor_top = 0.478
-anchor_right = 0.667
-anchor_bottom = 0.956
-margin_left = -0.200012
-margin_top = -0.160004
-margin_right = -0.200043
-margin_bottom = -0.320007
+anchor_left = 0.027
+anchor_top = 0.3
+anchor_right = 0.293
+anchor_bottom = 0.778
+margin_left = -0.200001
+margin_top = -1.52588e-05
+margin_right = 0.199997
+margin_bottom = -0.160034
 custom_constants/vseparation = 16
-custom_constants/hseparation = 100
+custom_constants/hseparation = 44
 columns = 2
 
 [node name="Acrobacia" type="LineEdit" parent="Perícias"]
@@ -491,12 +349,13 @@ align = 1
 placeholder_text = "Des"
 
 [node name="CheckBox" type="CheckBox" parent="Perícias/Acrobacia"]
-anchor_left = -0.0689655
+anchor_left = -0.103
 anchor_top = 0.791667
-anchor_right = 0.965035
-anchor_bottom = 1.79167
-margin_left = -2.0
-margin_right = 0.0279922
+anchor_right = 1.448
+anchor_bottom = 1.792
+margin_left = -0.0259986
+margin_right = -27.984
+margin_bottom = -0.00792313
 focus_mode = 0
 enabled_focus_mode = 0
 text = "Acrobacia"
@@ -505,19 +364,21 @@ __meta__ = {
 }
 
 [node name="Arcanismo" type="LineEdit" parent="Perícias"]
-margin_left = 158.0
-margin_right = 216.0
+margin_left = 102.0
+margin_right = 160.0
 margin_bottom = 24.0
 align = 1
 placeholder_text = "Int"
 
 [node name="CheckBox" type="CheckBox" parent="Perícias/Arcanismo"]
-anchor_left = -0.0689655
-anchor_top = 0.791667
-anchor_right = 0.965035
-anchor_bottom = 1.79167
-margin_left = -2.0
-margin_right = 0.0279922
+anchor_left = -0.103
+anchor_top = 0.792
+anchor_right = 1.552
+anchor_bottom = 1.792
+margin_left = -0.0259986
+margin_top = -0.0079937
+margin_right = -34.016
+margin_bottom = -0.00792313
 focus_mode = 0
 enabled_focus_mode = 0
 text = "Arcanismo"
@@ -533,12 +394,13 @@ align = 1
 placeholder_text = "For"
 
 [node name="CheckBox" type="CheckBox" parent="Perícias/Atletismo"]
-anchor_left = -0.0689655
+anchor_left = -0.103
 anchor_top = 0.833333
-anchor_right = 0.965035
-anchor_bottom = 1.83333
-margin_left = -2.0
-margin_right = 0.0279922
+anchor_right = 1.466
+anchor_bottom = 1.833
+margin_left = -0.0259986
+margin_right = -29.028
+margin_bottom = 0.00791931
 focus_mode = 0
 enabled_focus_mode = 0
 text = "Atletismo"
@@ -547,20 +409,21 @@ __meta__ = {
 }
 
 [node name="Atuação" type="LineEdit" parent="Perícias"]
-margin_left = 158.0
+margin_left = 102.0
 margin_top = 40.0
-margin_right = 216.0
+margin_right = 160.0
 margin_bottom = 64.0
 align = 1
 placeholder_text = "Car"
 
 [node name="CheckBox" type="CheckBox" parent="Perícias/Atuação"]
-anchor_left = -0.0689655
+anchor_left = -0.103
 anchor_top = 0.833333
-anchor_right = 0.965035
-anchor_bottom = 1.83333
-margin_left = -2.0
-margin_right = 0.0279922
+anchor_right = 1.259
+anchor_bottom = 1.833
+margin_left = -0.0259986
+margin_right = -17.022
+margin_bottom = 0.00791931
 focus_mode = 0
 enabled_focus_mode = 0
 text = "Atuação"
@@ -576,12 +439,13 @@ align = 1
 placeholder_text = "Car"
 
 [node name="CheckBox" type="CheckBox" parent="Perícias/Enganação"]
-anchor_left = -0.0689655
+anchor_left = -0.103
 anchor_top = 0.833333
-anchor_right = 0.965035
-anchor_bottom = 1.83333
-margin_left = -2.0
-margin_right = 0.0279922
+anchor_right = 1.517
+anchor_bottom = 1.833
+margin_left = -0.0259986
+margin_right = -31.986
+margin_bottom = 0.00791931
 focus_mode = 0
 enabled_focus_mode = 0
 text = "Enganação"
@@ -590,21 +454,22 @@ __meta__ = {
 }
 
 [node name="Furtividade" type="LineEdit" parent="Perícias"]
-margin_left = 158.0
+margin_left = 102.0
 margin_top = 80.0
-margin_right = 216.0
+margin_right = 160.0
 margin_bottom = 104.0
 align = 1
 placeholder_text = "Des"
 
 [node name="CheckBox" type="CheckBox" parent="Perícias/Furtividade"]
-anchor_left = 1.0
-anchor_right = 2.034
-anchor_bottom = 1.0
-margin_left = -64.0
-margin_top = 20.0
-margin_right = -61.972
-margin_bottom = 20.0
+anchor_left = -0.103
+anchor_top = 0.833
+anchor_right = 1.603
+anchor_bottom = 1.833
+margin_left = -0.0259995
+margin_top = 0.00799942
+margin_right = -36.974
+margin_bottom = 0.00799942
 focus_mode = 0
 enabled_focus_mode = 0
 text = "Furtividade"
@@ -620,13 +485,14 @@ align = 1
 placeholder_text = "Int"
 
 [node name="CheckBox" type="CheckBox" parent="Perícias/História"]
-anchor_left = 1.0
-anchor_right = 2.034
-anchor_bottom = 1.0
-margin_left = -64.0
-margin_top = 20.0
-margin_right = -61.972
-margin_bottom = 20.0
+anchor_left = -0.103
+anchor_top = 0.833
+anchor_right = 1.241
+anchor_bottom = 1.833
+margin_left = -0.0259995
+margin_top = 0.00799942
+margin_right = -15.978
+margin_bottom = 0.00799942
 focus_mode = 0
 enabled_focus_mode = 0
 text = "História"
@@ -635,21 +501,22 @@ __meta__ = {
 }
 
 [node name="Intimidação" type="LineEdit" parent="Perícias"]
-margin_left = 158.0
+margin_left = 102.0
 margin_top = 120.0
-margin_right = 216.0
+margin_right = 160.0
 margin_bottom = 144.0
 align = 1
 placeholder_text = "Car"
 
 [node name="CheckBox" type="CheckBox" parent="Perícias/Intimidação"]
-anchor_left = 1.0
-anchor_right = 2.034
-anchor_bottom = 1.0
-margin_left = -64.0
-margin_top = 20.0
-margin_right = -61.972
-margin_bottom = 20.0
+anchor_left = -0.103
+anchor_top = 0.833
+anchor_right = 1.69
+anchor_bottom = 1.833
+margin_left = -0.0259995
+margin_top = 0.00799942
+margin_right = -42.02
+margin_bottom = 0.00799942
 focus_mode = 0
 enabled_focus_mode = 0
 text = "Intimidação"
@@ -665,13 +532,14 @@ align = 1
 placeholder_text = "Sab"
 
 [node name="CheckBox" type="CheckBox" parent="Perícias/Intuição"]
-anchor_left = 1.0
-anchor_right = 2.034
-anchor_bottom = 1.0
-margin_left = -64.0
-margin_top = 20.0
-margin_right = -61.972
-margin_bottom = 20.0
+anchor_left = -0.103
+anchor_top = 0.833
+anchor_right = 1.276
+anchor_bottom = 1.833
+margin_left = -0.0259995
+margin_top = 0.00799942
+margin_right = -18.008
+margin_bottom = 0.00799942
 focus_mode = 0
 enabled_focus_mode = 0
 text = "Intuição"
@@ -680,21 +548,22 @@ __meta__ = {
 }
 
 [node name="Investigação" type="LineEdit" parent="Perícias"]
-margin_left = 158.0
+margin_left = 102.0
 margin_top = 160.0
-margin_right = 216.0
+margin_right = 160.0
 margin_bottom = 184.0
 align = 1
 placeholder_text = "Int"
 
 [node name="CheckBox" type="CheckBox" parent="Perícias/Investigação"]
-anchor_left = 1.0
-anchor_right = 2.034
-anchor_bottom = 1.0
-margin_left = -64.0
-margin_top = 20.0
-margin_right = -61.972
-margin_bottom = 20.0
+anchor_left = -0.103
+anchor_top = 0.833
+anchor_right = 1.759
+anchor_bottom = 1.833
+margin_left = -0.0259995
+margin_top = 0.00799942
+margin_right = -46.022
+margin_bottom = 0.00799942
 focus_mode = 0
 enabled_focus_mode = 0
 text = "Investigação"
@@ -710,36 +579,38 @@ align = 1
 placeholder_text = "Sab"
 
 [node name="CheckBox" type="CheckBox" parent="Perícias/Lidar"]
-anchor_left = 1.0
-anchor_right = 2.034
-anchor_bottom = 1.0
-margin_left = -64.0
-margin_top = 20.0
-margin_right = -61.972
-margin_bottom = 20.0
+anchor_left = -0.103
+anchor_top = 0.833
+anchor_right = 1.793
+anchor_bottom = 1.833
+margin_left = -0.0259995
+margin_top = 0.00799942
+margin_right = -47.994
+margin_bottom = 0.00799942
 focus_mode = 0
 enabled_focus_mode = 0
-text = "Lidar com animais"
+text = "L. c/ animais"
 __meta__ = {
 "_edit_use_anchors_": true
 }
 
 [node name="Medicina" type="LineEdit" parent="Perícias"]
-margin_left = 158.0
+margin_left = 102.0
 margin_top = 200.0
-margin_right = 216.0
+margin_right = 160.0
 margin_bottom = 224.0
 align = 1
 placeholder_text = "Sab"
 
 [node name="CheckBox" type="CheckBox" parent="Perícias/Medicina"]
-anchor_left = 1.0
-anchor_right = 2.034
-anchor_bottom = 1.0
-margin_left = -64.0
-margin_top = 20.0
-margin_right = -61.972
-margin_bottom = 20.0
+anchor_left = -0.103
+anchor_top = 0.833
+anchor_right = 1.379
+anchor_bottom = 1.833
+margin_left = -0.0259995
+margin_top = 0.00799942
+margin_right = -23.982
+margin_bottom = 0.00799942
 focus_mode = 0
 enabled_focus_mode = 0
 text = "Medicina"
@@ -755,13 +626,14 @@ align = 1
 placeholder_text = "Int"
 
 [node name="CheckBox" type="CheckBox" parent="Perícias/Natureza"]
-anchor_left = 1.0
-anchor_right = 2.034
-anchor_bottom = 1.0
-margin_left = -64.0
-margin_top = 20.0
-margin_right = -61.972
-margin_bottom = 20.0
+anchor_left = -0.103
+anchor_top = 0.833
+anchor_right = 1.362
+anchor_bottom = 1.833
+margin_left = -0.0259995
+margin_top = 0.00799942
+margin_right = -22.996
+margin_bottom = 0.00799942
 focus_mode = 0
 enabled_focus_mode = 0
 text = "Natureza"
@@ -770,21 +642,22 @@ __meta__ = {
 }
 
 [node name="Percepção" type="LineEdit" parent="Perícias"]
-margin_left = 158.0
+margin_left = 102.0
 margin_top = 240.0
-margin_right = 216.0
+margin_right = 160.0
 margin_bottom = 264.0
 align = 1
 placeholder_text = "Sab"
 
 [node name="CheckBox" type="CheckBox" parent="Perícias/Percepção"]
-anchor_left = 1.0
-anchor_right = 2.034
-anchor_bottom = 1.0
-margin_left = -64.0
-margin_top = 20.0
-margin_right = -61.972
-margin_bottom = 20.0
+anchor_left = -0.103
+anchor_top = 0.833
+anchor_right = 1.517
+anchor_bottom = 1.833
+margin_left = -0.0259995
+margin_top = 0.00799942
+margin_right = -31.986
+margin_bottom = 0.00799942
 focus_mode = 0
 enabled_focus_mode = 0
 text = "Percepção"
@@ -800,13 +673,14 @@ align = 1
 placeholder_text = "Car"
 
 [node name="CheckBox" type="CheckBox" parent="Perícias/Persuasão"]
-anchor_left = 1.0
-anchor_right = 2.034
-anchor_bottom = 1.0
-margin_left = -64.0
-margin_top = 20.0
-margin_right = -61.972
-margin_bottom = 20.0
+anchor_left = -0.103
+anchor_top = 0.833
+anchor_right = 1.414
+anchor_bottom = 1.833
+margin_left = -0.0259995
+margin_top = 0.00799942
+margin_right = -26.012
+margin_bottom = 0.00799942
 focus_mode = 0
 enabled_focus_mode = 0
 text = "Pesuasão"
@@ -815,21 +689,22 @@ __meta__ = {
 }
 
 [node name="Pestidigitação" type="LineEdit" parent="Perícias"]
-margin_left = 158.0
+margin_left = 102.0
 margin_top = 280.0
-margin_right = 216.0
+margin_right = 160.0
 margin_bottom = 304.0
 align = 1
 placeholder_text = "Des"
 
 [node name="CheckBox" type="CheckBox" parent="Perícias/Pestidigitação"]
-anchor_left = 1.0
-anchor_right = 2.034
-anchor_bottom = 1.0
-margin_left = -64.0
-margin_top = 20.0
-margin_right = -61.972
-margin_bottom = 20.0
+anchor_left = -0.103
+anchor_top = 0.833
+anchor_right = 2.0
+anchor_bottom = 1.833
+margin_left = -0.0259995
+margin_top = 0.00799942
+margin_right = -60.0
+margin_bottom = 0.00799942
 focus_mode = 0
 enabled_focus_mode = 0
 text = "Prestidigitação"
@@ -845,13 +720,13 @@ align = 1
 placeholder_text = "Int"
 
 [node name="CheckBox" type="CheckBox" parent="Perícias/Religião"]
-anchor_left = 1.0
-anchor_right = 2.034
-anchor_bottom = 1.0
-margin_left = -64.0
-margin_top = 20.0
-margin_right = -61.972
-margin_bottom = 20.0
+anchor_top = 0.833
+anchor_right = 1.241
+anchor_bottom = 1.833
+margin_left = -6.0
+margin_top = 0.00799942
+margin_right = -15.978
+margin_bottom = 0.00799942
 focus_mode = 0
 enabled_focus_mode = 0
 text = "Religião"
@@ -860,21 +735,22 @@ __meta__ = {
 }
 
 [node name="Sobrevivência" type="LineEdit" parent="Perícias"]
-margin_left = 158.0
+margin_left = 102.0
 margin_top = 320.0
-margin_right = 216.0
+margin_right = 160.0
 margin_bottom = 344.0
 align = 1
 placeholder_text = "Sab"
 
 [node name="CheckBox" type="CheckBox" parent="Perícias/Sobrevivência"]
-anchor_left = 1.0
-anchor_right = 2.034
-anchor_bottom = 1.0
-margin_left = -64.0
-margin_top = 20.0
-margin_right = -61.972
-margin_bottom = 20.0
+anchor_left = -0.103
+anchor_top = 0.833
+anchor_right = 1.897
+anchor_bottom = 1.833
+margin_left = -0.0259995
+margin_top = 0.00799942
+margin_right = -54.026
+margin_bottom = 0.00799942
 focus_mode = 0
 enabled_focus_mode = 0
 text = "Sobrevivência"
@@ -882,49 +758,356 @@ __meta__ = {
 "_edit_use_anchors_": true
 }
 
-[node name="VBoxContainer" type="VBoxContainer" parent="."]
-anchor_left = 0.68
-anchor_top = 0.189
-anchor_right = 0.773
-anchor_bottom = 0.3
-margin_top = -0.0800018
-margin_right = 2.19995
-margin_bottom = -28.0
+[node name="CIM" type="HBoxContainer" parent="."]
+anchor_left = 0.347
+anchor_top = 0.322
+anchor_right = 0.65
+anchor_bottom = 0.378
+margin_left = -0.199997
+margin_top = 0.159973
+margin_right = -3.05176e-05
+margin_bottom = -0.160004
 
-[node name="LineEdit" type="LineEdit" parent="VBoxContainer"]
+[node name="CA" type="LineEdit" parent="CIM"]
+margin_right = 58.0
+margin_bottom = 40.0
+align = 1
+placeholder_text = "CA"
+caret_blink = true
+
+[node name="Inici" type="LineEdit" parent="CIM"]
+margin_left = 62.0
+margin_right = 120.0
+margin_bottom = 40.0
+align = 1
+placeholder_text = "Iniciativa"
+caret_blink = true
+
+[node name="Mov" type="LineEdit" parent="CIM"]
+margin_left = 124.0
+margin_right = 182.0
+margin_bottom = 40.0
+align = 1
+placeholder_text = "Movimento"
+caret_blink = true
+
+[node name="Vida" type="VBoxContainer" parent="."]
+anchor_left = 0.347
+anchor_top = 0.389
+anchor_right = 0.653
+anchor_bottom = 0.5
+margin_left = -0.199997
+margin_top = -0.0800171
+margin_right = 0.199921
+
+[node name="VidaMáxima" type="LineEdit" parent="Vida"]
+margin_right = 183.0
+margin_bottom = 24.0
+align = 1
+placeholder_text = "Vida Máxima"
+caret_blink = true
+
+[node name="VidaAtual" type="LineEdit" parent="Vida"]
+margin_top = 28.0
+margin_right = 183.0
+margin_bottom = 52.0
+align = 1
+placeholder_text = "Vida Atual"
+caret_blink = true
+
+[node name="VidaTemp" type="LineEdit" parent="Vida"]
+margin_top = 56.0
+margin_right = 183.0
+margin_bottom = 80.0
+align = 1
+placeholder_text = "Vida Temporária"
+caret_blink = true
+
+[node name="DadosVida" type="VBoxContainer" parent="."]
+anchor_left = 0.667
+anchor_top = 0.428
+anchor_right = 0.763
+anchor_bottom = 0.5
+margin_left = -0.200043
+margin_top = -0.160034
+margin_right = 0.199982
+
+[node name="MaxDado" type="LineEdit" parent="DadosVida"]
+margin_right = 58.0
+margin_bottom = 24.0
+align = 1
+placeholder_text = "Max.Dados"
+caret_blink = true
+
+[node name="DadoVida" type="LineEdit" parent="DadosVida"]
+margin_top = 28.0
+margin_right = 58.0
+margin_bottom = 52.0
+align = 1
+placeholder_text = "D.Vida"
+caret_blink = true
+
+[node name="TesteMorte" type="GridContainer" parent="."]
+anchor_left = 0.4
+anchor_top = 0.522
+anchor_right = 0.767
+anchor_bottom = 0.558
+margin_top = 0.160004
+margin_right = -0.200012
+margin_bottom = 0.23999
+theme = SubResource( 2 )
+custom_constants/vseparation = -1
+custom_constants/hseparation = -1
+columns = 6
+
+[node name="Suc1" type="CheckBox" parent="TesteMorte"]
+margin_right = 22.0
+margin_bottom = 26.0
+focus_mode = 0
+enabled_focus_mode = 0
+
+[node name="Suc2" type="CheckBox" parent="TesteMorte"]
+margin_left = 21.0
+margin_right = 43.0
+margin_bottom = 26.0
+focus_mode = 0
+enabled_focus_mode = 0
+
+[node name="Suc3" type="CheckBox" parent="TesteMorte"]
+margin_left = 42.0
+margin_right = 120.0
+margin_bottom = 26.0
+focus_mode = 0
+enabled_focus_mode = 0
+text = "Sucesso"
+
+[node name="Fal1" type="CheckBox" parent="TesteMorte"]
+margin_left = 119.0
+margin_right = 141.0
+margin_bottom = 26.0
+focus_mode = 0
+enabled_focus_mode = 0
+
+[node name="Fal2" type="CheckBox" parent="TesteMorte"]
+margin_left = 140.0
+margin_right = 162.0
+margin_bottom = 26.0
+focus_mode = 0
+enabled_focus_mode = 0
+
+[node name="Fal3" type="CheckBox" parent="TesteMorte"]
+margin_left = 161.0
+margin_right = 220.0
+margin_bottom = 26.0
+focus_mode = 0
+enabled_focus_mode = 0
+text = "Falha"
+
+[node name="DINHEIRO" type="VBoxContainer" parent="."]
+anchor_left = 0.863
+anchor_top = 0.558
+anchor_right = 0.96
+anchor_bottom = 0.744
+margin_left = 0.199951
+margin_top = 0.23999
+margin_bottom = 2.32001
+
+[node name="PedCobre" type="LineEdit" parent="DINHEIRO"]
+margin_right = 58.0
+margin_bottom = 24.0
+placeholder_text = "PC"
+caret_blink = true
+
+[node name="PedPrata" type="LineEdit" parent="DINHEIRO"]
+margin_top = 28.0
+margin_right = 58.0
+margin_bottom = 52.0
+placeholder_text = "PP"
+caret_blink = true
+
+[node name="PedElektron" type="LineEdit" parent="DINHEIRO"]
+margin_top = 56.0
+margin_right = 58.0
+margin_bottom = 80.0
+placeholder_text = "PE"
+caret_blink = true
+
+[node name="PedOuro" type="LineEdit" parent="DINHEIRO"]
+margin_top = 84.0
+margin_right = 58.0
+margin_bottom = 108.0
+placeholder_text = "PO"
+caret_blink = true
+
+[node name="PedPlatina" type="LineEdit" parent="DINHEIRO"]
+margin_top = 112.0
+margin_right = 58.0
+margin_bottom = 136.0
+placeholder_text = "PL"
+
+[node name="PPI" type="VBoxContainer" parent="."]
+anchor_left = 0.863
+anchor_top = 0.428
+anchor_right = 0.96
+anchor_bottom = 0.539
+margin_left = 0.199951
+margin_top = -0.160034
+margin_bottom = -0.0800171
+
+[node name="LineEdit" type="LineEdit" parent="PPI"]
 margin_right = 58.0
 margin_bottom = 24.0
 align = 1
 placeholder_text = "Prof.Bn."
 
-[node name="LineEdit2" type="LineEdit" parent="VBoxContainer"]
+[node name="LineEdit2" type="LineEdit" parent="PPI"]
 margin_top = 28.0
 margin_right = 58.0
 margin_bottom = 52.0
 align = 1
 placeholder_text = "Perc.Pa"
 
-[node name="LineEdit3" type="LineEdit" parent="VBoxContainer"]
+[node name="LineEdit3" type="LineEdit" parent="PPI"]
 margin_top = 56.0
 margin_right = 58.0
 margin_bottom = 80.0
 align = 1
 placeholder_text = "Insp."
 
-[node name="Button" type="Button" parent="."]
-anchor_left = 0.827
-anchor_top = 0.889
-anchor_right = 0.96
-anchor_bottom = 0.967
-margin_left = -0.200012
+[node name="Ataques" type="GridContainer" parent="."]
+anchor_left = 0.4
+anchor_top = 0.592
+anchor_right = 0.732
+anchor_bottom = 0.7
+margin_top = -0.23999
+margin_right = -0.200043
+margin_bottom = 1.99997
+columns = 3
+
+[node name="LineEdit" type="LineEdit" parent="Ataques"]
+margin_right = 58.0
+margin_bottom = 24.0
+expand_to_text_length = true
+placeholder_text = "Nome"
+caret_blink = true
+
+[node name="Label" type="Label" parent="Ataques/LineEdit"]
+anchor_left = 1.069
+anchor_top = -0.667
+anchor_right = 2.069
+margin_left = -0.0019989
+margin_top = 0.00800133
+margin_right = -0.0019989
+margin_bottom = -2.0
+text = "Ataques"
+align = 1
+
+[node name="LineEdit2" type="LineEdit" parent="Ataques"]
+margin_left = 62.0
+margin_right = 120.0
+margin_bottom = 24.0
+expand_to_text_length = true
+placeholder_text = "At.Bn."
+caret_blink = true
+
+[node name="LineEdit3" type="LineEdit" parent="Ataques"]
+margin_left = 124.0
+margin_right = 199.0
+margin_bottom = 24.0
+rect_min_size = Vector2( 70, 0 )
+expand_to_text_length = true
+placeholder_text = "Dmg/Tipo"
+
+[node name="LineEdit4" type="LineEdit" parent="Ataques"]
+margin_top = 28.0
+margin_right = 58.0
+margin_bottom = 52.0
+expand_to_text_length = true
+placeholder_text = "Nome"
+caret_blink = true
+
+[node name="LineEdit5" type="LineEdit" parent="Ataques"]
+margin_left = 62.0
+margin_top = 28.0
+margin_right = 120.0
+margin_bottom = 52.0
+expand_to_text_length = true
+placeholder_text = "At.Bn."
+caret_blink = true
+
+[node name="LineEdit6" type="LineEdit" parent="Ataques"]
+margin_left = 124.0
+margin_top = 28.0
+margin_right = 199.0
+margin_bottom = 52.0
+rect_min_size = Vector2( 75, 0 )
+expand_to_text_length = true
+placeholder_text = "Dmg/Tipo"
+
+[node name="LineEdit7" type="LineEdit" parent="Ataques"]
+margin_top = 56.0
+margin_right = 58.0
+margin_bottom = 80.0
+placeholder_text = "Nome"
+caret_blink = true
+
+[node name="LineEdit8" type="LineEdit" parent="Ataques"]
+margin_left = 62.0
+margin_top = 56.0
+margin_right = 120.0
+margin_bottom = 80.0
+expand_to_text_length = true
+placeholder_text = "At.Bn."
+caret_blink = true
+
+[node name="LineEdit9" type="LineEdit" parent="Ataques"]
+margin_left = 124.0
+margin_top = 56.0
+margin_right = 199.0
+margin_bottom = 80.0
+expand_to_text_length = true
+placeholder_text = "Dmg/Tipo"
+
+[node name="TextEdit" type="TextEdit" parent="."]
+anchor_left = 0.4
+anchor_top = 0.714
+anchor_right = 0.732
+anchor_bottom = 0.878
 margin_top = -0.0800171
-margin_bottom = -0.240051
+margin_right = -0.200043
+margin_bottom = -0.160034
+caret_blink = true
+
+[node name="Mais" type="Button" parent="."]
+anchor_left = 0.027
+anchor_top = 0.878
+anchor_right = 0.16
+anchor_bottom = 0.956
+margin_left = -0.200001
+margin_top = -0.160034
+margin_bottom = -0.320007
 text = "Mais"
 
-[node name="PopupMenu" type="PopupMenu" parent="Button"]
+[node name="MaisPop" type="PopupMenu" parent="Mais"]
 margin_right = 20.0
 margin_bottom = 20.0
-items = [ "Item 0", null, 0, false, false, 0, 0, null, "", false, "Item 1", null, 0, false, false, 1, 0, null, "", false ]
+items = [ "Equipamento", null, 0, false, false, 0, 0, null, "", false, "Talentos & Características", null, 0, false, false, 1, 0, null, "", false, "Outras Proficiências & Idiomas", null, 0, false, false, 2, 0, null, "", false ]
+
+[node name="Páginas" type="Button" parent="."]
+anchor_left = 0.84
+anchor_top = 0.878
+anchor_right = 0.973
+anchor_bottom = 0.956
+margin_left = -3.05176e-05
+margin_top = -0.160034
+margin_right = 0.199951
+margin_bottom = -0.320007
+text = "Páginas"
+
+[node name="PopupMenu" type="PopupMenu" parent="Páginas"]
+margin_right = 20.0
+margin_bottom = 20.0
+items = [ "Aparência & História", null, 0, false, false, 0, 0, null, "", false, "Magias", null, 0, false, false, 1, 0, null, "", false ]
 
 [node name="Inventário" type="TextEdit" parent="."]
 visible = false
@@ -935,8 +1118,10 @@ anchor_bottom = 0.956
 margin_top = 0.319998
 margin_right = -0.200012
 margin_bottom = -0.320007
+wrap_enabled = true
+caret_blink = true
 
-[node name="Fechar" type="Button" parent="Inventário"]
+[node name="FecharInv" type="Button" parent="Inventário"]
 anchor_left = 0.868
 anchor_top = 0.89
 anchor_right = 0.978
@@ -946,6 +1131,25 @@ margin_top = 0.159973
 margin_right = -0.0320435
 margin_bottom = -0.192017
 
-[connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]
-[connection signal="index_pressed" from="Button/PopupMenu" to="." method="_on_PopupMenu_index_pressed"]
-[connection signal="pressed" from="Inventário/Fechar" to="." method="_on_Fechar_pressed"]
+[node name="Talentos" type="TextEdit" parent="."]
+visible = false
+anchor_left = 0.04
+anchor_top = 0.044
+anchor_right = 0.947
+anchor_bottom = 0.956
+margin_top = 0.319998
+margin_right = -0.200012
+margin_bottom = -0.320007
+
+[node name="FecharTal" type="Button" parent="Talentos"]
+margin_left = 472.0
+margin_top = 584.0
+margin_right = 532.0
+margin_bottom = 644.0
+
+[connection signal="pressed" from="Mais" to="." method="_on_Mais_pressed"]
+[connection signal="index_pressed" from="Mais/MaisPop" to="." method="_on_MaisPop_index_pressed"]
+[connection signal="pressed" from="Páginas" to="." method="_on_Pginas_pressed"]
+[connection signal="index_pressed" from="Páginas/PopupMenu" to="." method="_on_PopupMenu_index_pressed"]
+[connection signal="pressed" from="Inventário/FecharInv" to="." method="_on_Fechar_pressed"]
+[connection signal="pressed" from="Talentos/FecharTal" to="." method="_on_FecharTal_pressed"]

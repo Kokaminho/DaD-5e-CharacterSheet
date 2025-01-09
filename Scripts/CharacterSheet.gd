@@ -3,7 +3,7 @@ extends Control
 func _ready():
 	$"Inventário".hide()
 	$Talentos.hide()
-
+	$ProfIdi.hide()
 		
 func _on_Fechar_pressed():
 	$"Inventário".hide()
@@ -23,14 +23,18 @@ func _on_MaisPop_index_pressed(index):
 	
 	if index == 1:
 		$Talentos.show()
+	
+	if index == 2:
+		$ProfIdi.show()
 
 
-func _on_PopupMenu_index_pressed(index):
+func _on_Pginas_pressed():
+	$Paginas/PagPop.show()
+
+
+func _on_PagPop_index_pressed(index):
 	if index == 0:
 		get_tree().change_scene("res://Scenes/História.tscn")
 	
 	if index == 1:
 		get_tree().change_scene("res://Scenes/Magias.tscn")
-
-func _on_Pginas_pressed():
-	$"Páginas/PopupMenu".show()

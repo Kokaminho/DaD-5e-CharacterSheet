@@ -1,26 +1,658 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=58 format=2]
 
 [ext_resource path="res://Scripts/CharacterSheet.gd" type="Script" id=1]
 
-[sub_resource type="StyleBoxFlat" id=3]
-content_margin_left = 5.0
-content_margin_right = 1.0
-content_margin_bottom = 10.0
+[sub_resource type="StyleBoxFlat" id=5]
+bg_color = Color( 0.74902, 0.74902, 0.74902, 1 )
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color( 0, 0, 0, 1 )
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
 
-[sub_resource type="StyleBoxFlat" id=1]
-content_margin_left = 5.0
-content_margin_right = 1.0
-content_margin_bottom = 10.0
+[sub_resource type="StyleBoxFlat" id=6]
+bg_color = Color( 0.74902, 0.74902, 0.74902, 1 )
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color( 0, 0, 0, 1 )
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
 
-[sub_resource type="StyleBoxFlat" id=4]
-content_margin_left = 5.0
-content_margin_right = 1.0
-content_margin_bottom = 10.0
+[sub_resource type="StyleBoxFlat" id=8]
+bg_color = Color( 0.74902, 0.74902, 0.74902, 1 )
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color( 0, 0, 0, 1 )
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
 
-[sub_resource type="Theme" id=2]
-Button/styles/hover = SubResource( 3 )
-Button/styles/normal = SubResource( 1 )
-Button/styles/pressed = SubResource( 4 )
+[sub_resource type="StyleBoxFlat" id=9]
+bg_color = Color( 0.74902, 0.74902, 0.74902, 1 )
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color( 0, 0, 0, 1 )
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="StyleBoxFlat" id=7]
+bg_color = Color( 0.74902, 0.74902, 0.74902, 1 )
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color( 0, 0, 0, 1 )
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="StyleBoxFlat" id=10]
+bg_color = Color( 0.74902, 0.74902, 0.74902, 1 )
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color( 0, 0, 0, 1 )
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="StyleBoxFlat" id=11]
+bg_color = Color( 0.74902, 0.74902, 0.74902, 1 )
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color( 0, 0, 0, 1 )
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="StyleBoxFlat" id=13]
+bg_color = Color( 0.74902, 0.74902, 0.74902, 1 )
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color( 0, 0, 0, 1 )
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="StyleBoxFlat" id=12]
+bg_color = Color( 0.74902, 0.74902, 0.74902, 1 )
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color( 0, 0, 0, 1 )
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="StyleBoxFlat" id=14]
+bg_color = Color( 0.74902, 0.74902, 0.74902, 1 )
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color( 0, 0, 0, 1 )
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="StyleBoxFlat" id=15]
+bg_color = Color( 0.74902, 0.74902, 0.74902, 1 )
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color( 0, 0, 0, 1 )
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="StyleBoxFlat" id=16]
+bg_color = Color( 0.74902, 0.74902, 0.74902, 1 )
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color( 0, 0, 0, 1 )
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="StyleBoxFlat" id=17]
+bg_color = Color( 0.74902, 0.74902, 0.74902, 1 )
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color( 0, 0, 0, 1 )
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="StyleBoxFlat" id=18]
+bg_color = Color( 0.74902, 0.74902, 0.74902, 1 )
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color( 0, 0, 0, 1 )
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="StyleBoxFlat" id=19]
+bg_color = Color( 0.74902, 0.74902, 0.74902, 1 )
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color( 0, 0, 0, 1 )
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="StyleBoxFlat" id=20]
+bg_color = Color( 0.74902, 0.74902, 0.74902, 1 )
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color( 0, 0, 0, 1 )
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="StyleBoxFlat" id=21]
+bg_color = Color( 0.74902, 0.74902, 0.74902, 1 )
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color( 0, 0, 0, 1 )
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="StyleBoxFlat" id=22]
+bg_color = Color( 0.74902, 0.74902, 0.74902, 1 )
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color( 0, 0, 0, 1 )
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="StyleBoxFlat" id=23]
+bg_color = Color( 0.74902, 0.74902, 0.74902, 1 )
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color( 0, 0, 0, 1 )
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="StyleBoxFlat" id=24]
+bg_color = Color( 0.74902, 0.74902, 0.74902, 1 )
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color( 0, 0, 0, 1 )
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="StyleBoxFlat" id=25]
+bg_color = Color( 0.74902, 0.74902, 0.74902, 1 )
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color( 0, 0, 0, 1 )
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="StyleBoxFlat" id=26]
+bg_color = Color( 0.74902, 0.74902, 0.74902, 1 )
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color( 0, 0, 0, 1 )
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="StyleBoxFlat" id=27]
+bg_color = Color( 0.74902, 0.74902, 0.74902, 1 )
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color( 0, 0, 0, 1 )
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="StyleBoxFlat" id=28]
+bg_color = Color( 0.74902, 0.74902, 0.74902, 1 )
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color( 0, 0, 0, 1 )
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="StyleBoxFlat" id=29]
+bg_color = Color( 0.74902, 0.74902, 0.74902, 1 )
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color( 0, 0, 0, 1 )
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="StyleBoxFlat" id=30]
+bg_color = Color( 0.74902, 0.74902, 0.74902, 1 )
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color( 0, 0, 0, 1 )
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="StyleBoxFlat" id=31]
+bg_color = Color( 0.74902, 0.74902, 0.74902, 1 )
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color( 0, 0, 0, 1 )
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="StyleBoxFlat" id=34]
+bg_color = Color( 0.74902, 0.74902, 0.74902, 1 )
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color( 0, 0, 0, 1 )
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="StyleBoxFlat" id=32]
+bg_color = Color( 0.74902, 0.74902, 0.74902, 1 )
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color( 0, 0, 0, 1 )
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="StyleBoxFlat" id=35]
+bg_color = Color( 0.74902, 0.74902, 0.74902, 1 )
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color( 0, 0, 0, 1 )
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="StyleBoxFlat" id=33]
+bg_color = Color( 0.74902, 0.74902, 0.74902, 1 )
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color( 0, 0, 0, 1 )
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="StyleBoxFlat" id=36]
+bg_color = Color( 0.74902, 0.74902, 0.74902, 1 )
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color( 0, 0, 0, 1 )
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="StyleBoxFlat" id=37]
+bg_color = Color( 0.74902, 0.74902, 0.74902, 1 )
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color( 0, 0, 0, 1 )
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="StyleBoxFlat" id=38]
+bg_color = Color( 0.74902, 0.74902, 0.74902, 1 )
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color( 0, 0, 0, 1 )
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="StyleBoxFlat" id=39]
+bg_color = Color( 0.74902, 0.74902, 0.74902, 1 )
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color( 0, 0, 0, 1 )
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="StyleBoxFlat" id=40]
+bg_color = Color( 0.74902, 0.74902, 0.74902, 1 )
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color( 0, 0, 0, 1 )
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="StyleBoxFlat" id=41]
+bg_color = Color( 0.74902, 0.74902, 0.74902, 1 )
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color( 0, 0, 0, 1 )
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="StyleBoxFlat" id=42]
+bg_color = Color( 0.74902, 0.74902, 0.74902, 1 )
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color( 0, 0, 0, 1 )
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="StyleBoxFlat" id=43]
+bg_color = Color( 0.74902, 0.74902, 0.74902, 1 )
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color( 0, 0, 0, 1 )
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="StyleBoxFlat" id=44]
+bg_color = Color( 0.74902, 0.74902, 0.74902, 1 )
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color( 0, 0, 0, 1 )
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="StyleBoxFlat" id=45]
+bg_color = Color( 0.74902, 0.74902, 0.74902, 1 )
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color( 0, 0, 0, 1 )
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="StyleBoxFlat" id=46]
+bg_color = Color( 0.74902, 0.74902, 0.74902, 1 )
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color( 0, 0, 0, 1 )
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="StyleBoxFlat" id=47]
+bg_color = Color( 0.74902, 0.74902, 0.74902, 1 )
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color( 0, 0, 0, 1 )
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="StyleBoxFlat" id=48]
+bg_color = Color( 0.74902, 0.74902, 0.74902, 1 )
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color( 0, 0, 0, 1 )
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="StyleBoxFlat" id=49]
+bg_color = Color( 0.74902, 0.74902, 0.74902, 1 )
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color( 0, 0, 0, 1 )
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="StyleBoxFlat" id=50]
+bg_color = Color( 0.74902, 0.74902, 0.74902, 1 )
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color( 0, 0, 0, 1 )
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="StyleBoxFlat" id=51]
+bg_color = Color( 0.74902, 0.74902, 0.74902, 1 )
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color( 0, 0, 0, 1 )
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="StyleBoxFlat" id=52]
+bg_color = Color( 0.74902, 0.74902, 0.74902, 1 )
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color( 0, 0, 0, 1 )
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="StyleBoxFlat" id=53]
+bg_color = Color( 0.74902, 0.74902, 0.74902, 1 )
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color( 0, 0, 0, 1 )
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="StyleBoxFlat" id=54]
+bg_color = Color( 0.74902, 0.74902, 0.74902, 1 )
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color( 0, 0, 0, 1 )
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="StyleBoxFlat" id=58]
+bg_color = Color( 0.74902, 0.74902, 0.74902, 1 )
+border_width_left = 2
+border_width_top = 2
+border_width_bottom = 2
+border_color = Color( 0, 0, 0, 1 )
+corner_radius_top_left = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="StyleBoxFlat" id=55]
+bg_color = Color( 0.74902, 0.74902, 0.74902, 1 )
+border_width_left = 2
+border_width_top = 2
+border_width_bottom = 2
+border_color = Color( 0, 0, 0, 1 )
+corner_radius_top_left = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="StyleBoxFlat" id=59]
+bg_color = Color( 0.74902, 0.74902, 0.74902, 1 )
+border_width_top = 2
+border_width_bottom = 2
+border_color = Color( 0, 0, 0, 1 )
+corner_radius_top_right = 1
+corner_radius_bottom_right = 1
+
+[sub_resource type="StyleBoxFlat" id=56]
+bg_color = Color( 0.74902, 0.74902, 0.74902, 1 )
+border_width_top = 2
+border_width_bottom = 2
+border_color = Color( 0, 0, 0, 1 )
+corner_radius_top_right = 1
+corner_radius_bottom_right = 1
+
+[sub_resource type="StyleBoxFlat" id=60]
+bg_color = Color( 0.74902, 0.74902, 0.74902, 1 )
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color( 0, 0, 0, 1 )
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+
+[sub_resource type="StyleBoxFlat" id=57]
+bg_color = Color( 0.74902, 0.74902, 0.74902, 1 )
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color( 0, 0, 0, 1 )
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
 
 [node name="Control" type="Control"]
 anchor_right = 1.0
@@ -42,6 +674,8 @@ margin_left = -0.200001
 margin_top = 0.24
 margin_right = -0.200012
 margin_bottom = 0.159996
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_styles/normal = SubResource( 5 )
 expand_to_text_length = true
 placeholder_text = "Nome"
 caret_blink = true
@@ -55,6 +689,8 @@ margin_left = -0.200012
 margin_top = 0.24
 margin_right = 0.199982
 margin_bottom = 1.76
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_styles/normal = SubResource( 6 )
 expand_to_text_length = true
 placeholder_text = "Classe & Nível"
 caret_blink = true
@@ -67,6 +703,8 @@ anchor_bottom = 0.125
 margin_left = -0.200012
 margin_top = -0.0800018
 margin_right = 0.199982
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_styles/normal = SubResource( 8 )
 expand_to_text_length = true
 clear_button_enabled = true
 placeholder_text = "Raça"
@@ -80,6 +718,8 @@ anchor_bottom = 0.125
 margin_left = -0.200012
 margin_top = -0.0800018
 margin_right = -0.200043
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_styles/normal = SubResource( 9 )
 expand_to_text_length = true
 clear_button_enabled = true
 placeholder_text = "Alinhamento"
@@ -93,6 +733,8 @@ anchor_bottom = 0.067
 margin_left = -3.05176e-05
 margin_top = 0.24
 margin_bottom = 1.76
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_styles/normal = SubResource( 7 )
 expand_to_text_length = true
 clear_button_enabled = true
 placeholder_text = "Antecedente"
@@ -106,6 +748,8 @@ anchor_bottom = 0.122
 margin_left = 0.199982
 margin_top = -0.0800018
 margin_bottom = 0.159996
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_styles/normal = SubResource( 10 )
 expand_to_text_length = true
 placeholder_text = "EXP"
 caret_blink = true
@@ -124,6 +768,7 @@ margin_right = 60.0
 margin_bottom = 60.0
 rect_min_size = Vector2( 60, 60 )
 custom_colors/font_color = Color( 1, 0, 0, 1 )
+custom_styles/normal = SubResource( 11 )
 align = 1
 placeholder_text = "For"
 
@@ -135,6 +780,7 @@ margin_top = -0.0200043
 margin_right = -0.0200043
 margin_bottom = -0.0200043
 custom_colors/font_color = Color( 1, 0, 0, 1 )
+custom_styles/normal = SubResource( 13 )
 align = 1
 placeholder_text = "Mod."
 
@@ -144,6 +790,7 @@ margin_right = 124.0
 margin_bottom = 60.0
 rect_min_size = Vector2( 60, 60 )
 custom_colors/font_color = Color( 0, 0.976471, 1, 1 )
+custom_styles/normal = SubResource( 12 )
 align = 1
 placeholder_text = "Des"
 
@@ -155,6 +802,7 @@ margin_top = -0.0200043
 margin_right = -0.0200043
 margin_bottom = -0.0200043
 custom_colors/font_color = Color( 0, 0.964706, 1, 1 )
+custom_styles/normal = SubResource( 14 )
 align = 1
 placeholder_text = "Mod."
 
@@ -164,6 +812,7 @@ margin_right = 188.0
 margin_bottom = 60.0
 rect_min_size = Vector2( 60, 60 )
 custom_colors/font_color = Color( 0.00784314, 1, 0, 1 )
+custom_styles/normal = SubResource( 15 )
 align = 1
 placeholder_text = "Con"
 
@@ -175,6 +824,7 @@ margin_top = -0.0200043
 margin_right = -0.0200043
 margin_bottom = -0.0200043
 custom_colors/font_color = Color( 0.141176, 1, 0, 1 )
+custom_styles/normal = SubResource( 16 )
 align = 1
 placeholder_text = "Mod."
 
@@ -184,6 +834,7 @@ margin_right = 252.0
 margin_bottom = 60.0
 rect_min_size = Vector2( 60, 60 )
 custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_styles/normal = SubResource( 17 )
 align = 1
 placeholder_text = "Int"
 
@@ -195,6 +846,7 @@ margin_top = -0.0200043
 margin_right = -0.0200043
 margin_bottom = -0.0200043
 custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_styles/normal = SubResource( 18 )
 align = 1
 placeholder_text = "Mod."
 
@@ -204,6 +856,7 @@ margin_right = 316.0
 margin_bottom = 60.0
 rect_min_size = Vector2( 60, 60 )
 custom_colors/font_color = Color( 0.439216, 0, 1, 1 )
+custom_styles/normal = SubResource( 19 )
 align = 1
 placeholder_text = "Sab"
 
@@ -215,6 +868,7 @@ margin_top = -0.0200043
 margin_right = -0.019989
 margin_bottom = -0.0200043
 custom_colors/font_color = Color( 0.415686, 0, 1, 1 )
+custom_styles/normal = SubResource( 20 )
 align = 1
 placeholder_text = "Mod."
 
@@ -224,6 +878,7 @@ margin_right = 380.0
 margin_bottom = 60.0
 rect_min_size = Vector2( 60, 60 )
 custom_colors/font_color = Color( 0.933333, 1, 0, 1 )
+custom_styles/normal = SubResource( 21 )
 align = 1
 placeholder_text = "Car"
 
@@ -235,6 +890,7 @@ margin_top = -0.0200043
 margin_right = -0.0200043
 margin_bottom = -0.0200043
 custom_colors/font_color = Color( 1, 0.937255, 0, 1 )
+custom_styles/normal = SubResource( 22 )
 align = 1
 placeholder_text = "Mod."
 
@@ -250,83 +906,106 @@ margin_bottom = 0.319977
 
 [node name="Força" type="LineEdit" parent="Salva-Guardas"]
 margin_right = 58.0
-margin_bottom = 24.0
+margin_bottom = 18.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_styles/normal = SubResource( 23 )
 
 [node name="CheckBox" type="CheckBox" parent="Salva-Guardas/Força"]
-anchor_left = 1.0
+anchor_left = 0.966
 anchor_right = 2.034
-anchor_bottom = 1.0
-margin_left = -2.0
-margin_right = 0.0279922
+anchor_bottom = 1.333
+margin_left = -0.0279999
+margin_right = 0.027977
+margin_bottom = -5.994
+custom_colors/font_color = Color( 0, 0, 0, 1 )
 text = "Força"
 __meta__ = {
 "_edit_use_anchors_": true
 }
 
 [node name="Destreza" type="LineEdit" parent="Salva-Guardas"]
-margin_top = 28.0
+margin_top = 22.0
 margin_right = 58.0
-margin_bottom = 52.0
+margin_bottom = 40.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_styles/normal = SubResource( 24 )
 
 [node name="CheckBox" type="CheckBox" parent="Salva-Guardas/Destreza"]
 anchor_left = 0.966
 anchor_right = 2.431
-anchor_bottom = 0.833
+anchor_bottom = 1.333
 margin_left = -0.0279999
 margin_right = -22.998
-margin_bottom = 4.008
+margin_bottom = -4.992
+custom_colors/font_color = Color( 0, 0, 0, 1 )
 text = "Destreza"
 
 [node name="Constituição" type="LineEdit" parent="Salva-Guardas"]
-margin_top = 56.0
+margin_top = 44.0
 margin_right = 58.0
-margin_bottom = 80.0
+margin_bottom = 62.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_styles/normal = SubResource( 25 )
 
 [node name="CheckBox" type="CheckBox" parent="Salva-Guardas/Constituição"]
 anchor_left = 0.966
-anchor_right = 2.759
-anchor_bottom = 1.0
+anchor_right = 2.81
+anchor_bottom = 1.333
 margin_left = -0.0279999
-margin_right = -42.022
+margin_right = -44.98
+margin_bottom = -5.994
+custom_colors/font_color = Color( 0, 0, 0, 1 )
 text = "Constituição"
 
 [node name="Inteligência" type="LineEdit" parent="Salva-Guardas"]
-margin_top = 84.0
+margin_top = 66.0
 margin_right = 58.0
-margin_bottom = 108.0
+margin_bottom = 84.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_styles/normal = SubResource( 26 )
 
 [node name="CheckBox" type="CheckBox" parent="Salva-Guardas/Inteligência"]
 anchor_left = 0.966
 anchor_right = 2.741
-anchor_bottom = 1.0
+anchor_bottom = 1.333
 margin_left = -0.0279999
 margin_right = -40.978
+margin_bottom = -5.994
+custom_colors/font_color = Color( 0, 0, 0, 1 )
 text = "Inteligência"
 
 [node name="Sabedoria" type="LineEdit" parent="Salva-Guardas"]
-margin_top = 112.0
+margin_top = 88.0
 margin_right = 58.0
-margin_bottom = 136.0
+margin_bottom = 106.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_styles/normal = SubResource( 27 )
 
 [node name="CheckBox" type="CheckBox" parent="Salva-Guardas/Sabedoria"]
-anchor_left = 1.0
+anchor_left = 0.966
 anchor_right = 2.517
-anchor_bottom = 1.0
-margin_left = -2.0
+anchor_bottom = 1.333
+margin_left = -0.0279999
 margin_right = -27.986
+margin_bottom = -5.994
+custom_colors/font_color = Color( 0, 0, 0, 1 )
 text = "Sabedoria"
 
 [node name="Carisma" type="LineEdit" parent="Salva-Guardas"]
-margin_top = 140.0
+margin_top = 110.0
 margin_right = 58.0
-margin_bottom = 164.0
+margin_bottom = 128.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_styles/normal = SubResource( 28 )
 
 [node name="CheckBox" type="CheckBox" parent="Salva-Guardas/Carisma"]
 anchor_left = 0.966
 anchor_right = 2.328
-anchor_bottom = 1.0
+anchor_bottom = 1.333
 margin_left = -0.0279999
 margin_right = -0.0240021
+margin_bottom = -5.994
+custom_colors/font_color = Color( 0, 0, 0, 1 )
 text = "Carisma"
 
 [node name="Perícias" type="GridContainer" parent="."]
@@ -343,8 +1022,10 @@ custom_constants/hseparation = 44
 columns = 2
 
 [node name="Acrobacia" type="LineEdit" parent="Perícias"]
-margin_right = 58.0
-margin_bottom = 24.0
+margin_right = 52.0
+margin_bottom = 18.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_styles/normal = SubResource( 29 )
 align = 1
 placeholder_text = "Des"
 
@@ -357,6 +1038,7 @@ margin_left = -0.0259986
 margin_right = -27.984
 margin_bottom = -0.00792313
 focus_mode = 0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
 enabled_focus_mode = 0
 text = "Acrobacia"
 __meta__ = {
@@ -364,9 +1046,11 @@ __meta__ = {
 }
 
 [node name="Arcanismo" type="LineEdit" parent="Perícias"]
-margin_left = 102.0
-margin_right = 160.0
-margin_bottom = 24.0
+margin_left = 96.0
+margin_right = 148.0
+margin_bottom = 18.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_styles/normal = SubResource( 30 )
 align = 1
 placeholder_text = "Int"
 
@@ -380,6 +1064,7 @@ margin_top = -0.0079937
 margin_right = -34.016
 margin_bottom = -0.00792313
 focus_mode = 0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
 enabled_focus_mode = 0
 text = "Arcanismo"
 __meta__ = {
@@ -387,9 +1072,11 @@ __meta__ = {
 }
 
 [node name="Atletismo" type="LineEdit" parent="Perícias"]
-margin_top = 40.0
-margin_right = 58.0
-margin_bottom = 64.0
+margin_top = 34.0
+margin_right = 52.0
+margin_bottom = 52.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_styles/normal = SubResource( 31 )
 align = 1
 placeholder_text = "For"
 
@@ -402,6 +1089,7 @@ margin_left = -0.0259986
 margin_right = -29.028
 margin_bottom = 0.00791931
 focus_mode = 0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
 enabled_focus_mode = 0
 text = "Atletismo"
 __meta__ = {
@@ -409,10 +1097,12 @@ __meta__ = {
 }
 
 [node name="Atuação" type="LineEdit" parent="Perícias"]
-margin_left = 102.0
-margin_top = 40.0
-margin_right = 160.0
-margin_bottom = 64.0
+margin_left = 96.0
+margin_top = 34.0
+margin_right = 148.0
+margin_bottom = 52.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_styles/normal = SubResource( 34 )
 align = 1
 placeholder_text = "Car"
 
@@ -425,6 +1115,7 @@ margin_left = -0.0259986
 margin_right = -17.022
 margin_bottom = 0.00791931
 focus_mode = 0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
 enabled_focus_mode = 0
 text = "Atuação"
 __meta__ = {
@@ -432,9 +1123,11 @@ __meta__ = {
 }
 
 [node name="Enganação" type="LineEdit" parent="Perícias"]
-margin_top = 80.0
-margin_right = 58.0
-margin_bottom = 104.0
+margin_top = 68.0
+margin_right = 52.0
+margin_bottom = 86.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_styles/normal = SubResource( 32 )
 align = 1
 placeholder_text = "Car"
 
@@ -454,10 +1147,12 @@ __meta__ = {
 }
 
 [node name="Furtividade" type="LineEdit" parent="Perícias"]
-margin_left = 102.0
-margin_top = 80.0
-margin_right = 160.0
-margin_bottom = 104.0
+margin_left = 96.0
+margin_top = 68.0
+margin_right = 148.0
+margin_bottom = 86.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_styles/normal = SubResource( 35 )
 align = 1
 placeholder_text = "Des"
 
@@ -478,9 +1173,11 @@ __meta__ = {
 }
 
 [node name="História" type="LineEdit" parent="Perícias"]
-margin_top = 120.0
-margin_right = 58.0
-margin_bottom = 144.0
+margin_top = 102.0
+margin_right = 52.0
+margin_bottom = 120.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_styles/normal = SubResource( 33 )
 align = 1
 placeholder_text = "Int"
 
@@ -501,10 +1198,12 @@ __meta__ = {
 }
 
 [node name="Intimidação" type="LineEdit" parent="Perícias"]
-margin_left = 102.0
-margin_top = 120.0
-margin_right = 160.0
-margin_bottom = 144.0
+margin_left = 96.0
+margin_top = 102.0
+margin_right = 148.0
+margin_bottom = 120.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_styles/normal = SubResource( 36 )
 align = 1
 placeholder_text = "Car"
 
@@ -525,9 +1224,11 @@ __meta__ = {
 }
 
 [node name="Intuição" type="LineEdit" parent="Perícias"]
-margin_top = 160.0
-margin_right = 58.0
-margin_bottom = 184.0
+margin_top = 136.0
+margin_right = 52.0
+margin_bottom = 154.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_styles/normal = SubResource( 37 )
 align = 1
 placeholder_text = "Sab"
 
@@ -548,10 +1249,12 @@ __meta__ = {
 }
 
 [node name="Investigação" type="LineEdit" parent="Perícias"]
-margin_left = 102.0
-margin_top = 160.0
-margin_right = 160.0
-margin_bottom = 184.0
+margin_left = 96.0
+margin_top = 136.0
+margin_right = 148.0
+margin_bottom = 154.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_styles/normal = SubResource( 38 )
 align = 1
 placeholder_text = "Int"
 
@@ -572,9 +1275,11 @@ __meta__ = {
 }
 
 [node name="Lidar" type="LineEdit" parent="Perícias"]
-margin_top = 200.0
-margin_right = 58.0
-margin_bottom = 224.0
+margin_top = 170.0
+margin_right = 52.0
+margin_bottom = 188.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_styles/normal = SubResource( 39 )
 align = 1
 placeholder_text = "Sab"
 
@@ -595,10 +1300,12 @@ __meta__ = {
 }
 
 [node name="Medicina" type="LineEdit" parent="Perícias"]
-margin_left = 102.0
-margin_top = 200.0
-margin_right = 160.0
-margin_bottom = 224.0
+margin_left = 96.0
+margin_top = 170.0
+margin_right = 148.0
+margin_bottom = 188.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_styles/normal = SubResource( 40 )
 align = 1
 placeholder_text = "Sab"
 
@@ -619,9 +1326,11 @@ __meta__ = {
 }
 
 [node name="Natureza" type="LineEdit" parent="Perícias"]
-margin_top = 240.0
-margin_right = 58.0
-margin_bottom = 264.0
+margin_top = 204.0
+margin_right = 52.0
+margin_bottom = 222.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_styles/normal = SubResource( 41 )
 align = 1
 placeholder_text = "Int"
 
@@ -642,10 +1351,12 @@ __meta__ = {
 }
 
 [node name="Percepção" type="LineEdit" parent="Perícias"]
-margin_left = 102.0
-margin_top = 240.0
-margin_right = 160.0
-margin_bottom = 264.0
+margin_left = 96.0
+margin_top = 204.0
+margin_right = 148.0
+margin_bottom = 222.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_styles/normal = SubResource( 42 )
 align = 1
 placeholder_text = "Sab"
 
@@ -666,9 +1377,11 @@ __meta__ = {
 }
 
 [node name="Persuasão" type="LineEdit" parent="Perícias"]
-margin_top = 280.0
-margin_right = 58.0
-margin_bottom = 304.0
+margin_top = 238.0
+margin_right = 52.0
+margin_bottom = 256.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_styles/normal = SubResource( 43 )
 align = 1
 placeholder_text = "Car"
 
@@ -689,10 +1402,12 @@ __meta__ = {
 }
 
 [node name="Pestidigitação" type="LineEdit" parent="Perícias"]
-margin_left = 102.0
-margin_top = 280.0
-margin_right = 160.0
-margin_bottom = 304.0
+margin_left = 96.0
+margin_top = 238.0
+margin_right = 148.0
+margin_bottom = 256.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_styles/normal = SubResource( 44 )
 align = 1
 placeholder_text = "Des"
 
@@ -713,9 +1428,11 @@ __meta__ = {
 }
 
 [node name="Religião" type="LineEdit" parent="Perícias"]
-margin_top = 320.0
-margin_right = 58.0
-margin_bottom = 344.0
+margin_top = 272.0
+margin_right = 52.0
+margin_bottom = 290.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_styles/normal = SubResource( 45 )
 align = 1
 placeholder_text = "Int"
 
@@ -735,10 +1452,12 @@ __meta__ = {
 }
 
 [node name="Sobrevivência" type="LineEdit" parent="Perícias"]
-margin_left = 102.0
-margin_top = 320.0
-margin_right = 160.0
-margin_bottom = 344.0
+margin_left = 96.0
+margin_top = 272.0
+margin_right = 148.0
+margin_bottom = 290.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_styles/normal = SubResource( 46 )
 align = 1
 placeholder_text = "Sab"
 
@@ -759,34 +1478,40 @@ __meta__ = {
 }
 
 [node name="CIM" type="HBoxContainer" parent="."]
-anchor_left = 0.347
+anchor_left = 0.36
 anchor_top = 0.322
-anchor_right = 0.65
+anchor_right = 0.633
 anchor_bottom = 0.378
-margin_left = -0.199997
+margin_left = -1.52588e-05
 margin_top = 0.159973
-margin_right = -3.05176e-05
+margin_right = 0.199982
 margin_bottom = -0.160004
 
 [node name="CA" type="LineEdit" parent="CIM"]
-margin_right = 58.0
+margin_right = 52.0
 margin_bottom = 40.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_styles/normal = SubResource( 47 )
 align = 1
 placeholder_text = "CA"
 caret_blink = true
 
 [node name="Inici" type="LineEdit" parent="CIM"]
-margin_left = 62.0
-margin_right = 120.0
+margin_left = 56.0
+margin_right = 108.0
 margin_bottom = 40.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_styles/normal = SubResource( 48 )
 align = 1
 placeholder_text = "Iniciativa"
 caret_blink = true
 
 [node name="Mov" type="LineEdit" parent="CIM"]
-margin_left = 124.0
-margin_right = 182.0
+margin_left = 112.0
+margin_right = 164.0
 margin_bottom = 40.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_styles/normal = SubResource( 49 )
 align = 1
 placeholder_text = "Movimento"
 caret_blink = true
@@ -795,111 +1520,131 @@ caret_blink = true
 anchor_left = 0.347
 anchor_top = 0.389
 anchor_right = 0.653
-anchor_bottom = 0.5
+anchor_bottom = 0.478
 margin_left = -0.199997
-margin_top = -0.0800171
-margin_right = 0.199921
+margin_top = -0.0799866
+margin_right = 0.200012
+margin_bottom = -0.160004
 
 [node name="VidaMáxima" type="LineEdit" parent="Vida"]
-margin_right = 183.0
-margin_bottom = 24.0
+margin_right = 184.0
+margin_bottom = 18.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_styles/normal = SubResource( 50 )
 align = 1
 placeholder_text = "Vida Máxima"
 caret_blink = true
 
 [node name="VidaAtual" type="LineEdit" parent="Vida"]
-margin_top = 28.0
-margin_right = 183.0
-margin_bottom = 52.0
+margin_top = 22.0
+margin_right = 184.0
+margin_bottom = 40.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_styles/normal = SubResource( 51 )
 align = 1
 placeholder_text = "Vida Atual"
 caret_blink = true
 
 [node name="VidaTemp" type="LineEdit" parent="Vida"]
-margin_top = 56.0
-margin_right = 183.0
-margin_bottom = 80.0
+margin_top = 44.0
+margin_right = 184.0
+margin_bottom = 62.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_styles/normal = SubResource( 52 )
 align = 1
 placeholder_text = "Vida Temporária"
 caret_blink = true
 
 [node name="DadosVida" type="VBoxContainer" parent="."]
 anchor_left = 0.667
-anchor_top = 0.428
+anchor_top = 0.389
 anchor_right = 0.763
-anchor_bottom = 0.5
-margin_left = -0.200043
-margin_top = -0.160034
+anchor_bottom = 0.444
+margin_left = -0.200012
+margin_top = -0.0800171
 margin_right = 0.199982
+margin_bottom = 0.319977
 
 [node name="MaxDado" type="LineEdit" parent="DadosVida"]
 margin_right = 58.0
-margin_bottom = 24.0
+margin_bottom = 18.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_styles/normal = SubResource( 53 )
 align = 1
 placeholder_text = "Max.Dados"
 caret_blink = true
 
 [node name="DadoVida" type="LineEdit" parent="DadosVida"]
-margin_top = 28.0
+margin_top = 22.0
 margin_right = 58.0
-margin_bottom = 52.0
+margin_bottom = 40.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_styles/normal = SubResource( 54 )
 align = 1
 placeholder_text = "D.Vida"
 caret_blink = true
 
 [node name="TesteMorte" type="GridContainer" parent="."]
 anchor_left = 0.4
-anchor_top = 0.522
-anchor_right = 0.767
-anchor_bottom = 0.558
-margin_top = 0.160004
-margin_right = -0.200012
-margin_bottom = 0.23999
-theme = SubResource( 2 )
-custom_constants/vseparation = -1
+anchor_top = 0.489
+anchor_right = 0.59
+anchor_bottom = 0.55
+margin_top = -0.0800171
+margin_right = -3.05176e-05
 custom_constants/hseparation = -1
-columns = 6
+columns = 3
 
 [node name="Suc1" type="CheckBox" parent="TesteMorte"]
-margin_right = 22.0
-margin_bottom = 26.0
+margin_right = 24.0
+margin_bottom = 20.0
 focus_mode = 0
+custom_styles/hover = SubResource( 58 )
+custom_styles/normal = SubResource( 55 )
 enabled_focus_mode = 0
 
 [node name="Suc2" type="CheckBox" parent="TesteMorte"]
-margin_left = 21.0
-margin_right = 43.0
-margin_bottom = 26.0
+margin_left = 23.0
+margin_right = 47.0
+margin_bottom = 20.0
 focus_mode = 0
+custom_styles/hover = SubResource( 59 )
+custom_styles/normal = SubResource( 56 )
 enabled_focus_mode = 0
 
 [node name="Suc3" type="CheckBox" parent="TesteMorte"]
-margin_left = 42.0
+margin_left = 46.0
 margin_right = 120.0
-margin_bottom = 26.0
+margin_bottom = 20.0
 focus_mode = 0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
+custom_styles/hover = SubResource( 60 )
+custom_styles/normal = SubResource( 57 )
 enabled_focus_mode = 0
 text = "Sucesso"
 
 [node name="Fal1" type="CheckBox" parent="TesteMorte"]
-margin_left = 119.0
-margin_right = 141.0
-margin_bottom = 26.0
+margin_top = 24.0
+margin_right = 24.0
+margin_bottom = 48.0
 focus_mode = 0
 enabled_focus_mode = 0
 
 [node name="Fal2" type="CheckBox" parent="TesteMorte"]
-margin_left = 140.0
-margin_right = 162.0
-margin_bottom = 26.0
+margin_left = 23.0
+margin_top = 24.0
+margin_right = 47.0
+margin_bottom = 48.0
 focus_mode = 0
 enabled_focus_mode = 0
 
 [node name="Fal3" type="CheckBox" parent="TesteMorte"]
-margin_left = 161.0
-margin_right = 220.0
-margin_bottom = 26.0
+margin_left = 46.0
+margin_top = 24.0
+margin_right = 120.0
+margin_bottom = 48.0
 focus_mode = 0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
 enabled_focus_mode = 0
 text = "Falha"
 
@@ -1093,7 +1838,7 @@ margin_right = 20.0
 margin_bottom = 20.0
 items = [ "Equipamento", null, 0, false, false, 0, 0, null, "", false, "Talentos & Características", null, 0, false, false, 1, 0, null, "", false, "Outras Proficiências & Idiomas", null, 0, false, false, 2, 0, null, "", false ]
 
-[node name="Páginas" type="Button" parent="."]
+[node name="Paginas" type="Button" parent="."]
 anchor_left = 0.84
 anchor_top = 0.878
 anchor_right = 0.973
@@ -1104,7 +1849,7 @@ margin_right = 0.199951
 margin_bottom = -0.320007
 text = "Páginas"
 
-[node name="PopupMenu" type="PopupMenu" parent="Páginas"]
+[node name="PagPop" type="PopupMenu" parent="Paginas"]
 margin_right = 20.0
 margin_bottom = 20.0
 items = [ "Aparência & História", null, 0, false, false, 0, 0, null, "", false, "Magias", null, 0, false, false, 1, 0, null, "", false ]
@@ -1147,9 +1892,29 @@ margin_top = 584.0
 margin_right = 532.0
 margin_bottom = 644.0
 
+[node name="ProfIdi" type="TextEdit" parent="."]
+visible = false
+anchor_left = 0.04
+anchor_top = 0.044
+anchor_right = 0.947
+anchor_bottom = 0.956
+margin_top = 0.319998
+margin_right = -0.200012
+margin_bottom = -0.320007
+
+[node name="Button" type="Button" parent="ProfIdi"]
+anchor_left = 0.868
+anchor_top = 0.89
+anchor_right = 0.978
+anchor_bottom = 0.982
+margin_left = -0.192017
+margin_top = 0.159973
+margin_right = -0.0320435
+margin_bottom = -0.192017
+
 [connection signal="pressed" from="Mais" to="." method="_on_Mais_pressed"]
 [connection signal="index_pressed" from="Mais/MaisPop" to="." method="_on_MaisPop_index_pressed"]
-[connection signal="pressed" from="Páginas" to="." method="_on_Pginas_pressed"]
-[connection signal="index_pressed" from="Páginas/PopupMenu" to="." method="_on_PopupMenu_index_pressed"]
+[connection signal="pressed" from="Paginas" to="." method="_on_Pginas_pressed"]
+[connection signal="index_pressed" from="Paginas/PagPop" to="." method="_on_PagPop_index_pressed"]
 [connection signal="pressed" from="Inventário/FecharInv" to="." method="_on_Fechar_pressed"]
 [connection signal="pressed" from="Talentos/FecharTal" to="." method="_on_FecharTal_pressed"]

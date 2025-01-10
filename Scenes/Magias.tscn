@@ -1,6 +1,103 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://Scripts/Magias.gd" type="Script" id=1]
+
+[sub_resource type="StyleBoxFlat" id=1]
+bg_color = Color( 0.74902, 0.74902, 0.74902, 1 )
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color( 0, 0, 0, 1 )
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="StyleBoxFlat" id=2]
+bg_color = Color( 0.74902, 0.74902, 0.74902, 1 )
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color( 0, 0, 0, 1 )
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="StyleBoxFlat" id=3]
+bg_color = Color( 0.74902, 0.74902, 0.74902, 1 )
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color( 0, 0, 0, 1 )
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="StyleBoxFlat" id=4]
+bg_color = Color( 0.74902, 0.74902, 0.74902, 1 )
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color( 0, 0, 0, 1 )
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="StyleBoxFlat" id=5]
+bg_color = Color( 0.74902, 0.74902, 0.74902, 1 )
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color( 0, 0, 0, 1 )
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="StyleBoxFlat" id=6]
+bg_color = Color( 0.74902, 0.74902, 0.74902, 1 )
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color( 0, 0, 0, 1 )
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="Theme" id=7]
+TextEdit/colors/font_color = Color( 0, 0, 0, 1 )
+TextEdit/styles/normal = SubResource( 6 )
+
+[sub_resource type="StyleBoxFlat" id=8]
+bg_color = Color( 0.0901961, 0.0901961, 0.0901961, 1 )
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="StyleBoxFlat" id=9]
+bg_color = Color( 0.192157, 0.192157, 0.192157, 1 )
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="StyleBoxFlat" id=10]
+bg_color = Color( 0.192157, 0.192157, 0.192157, 1 )
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
 
 [node name="Control" type="Control"]
 anchor_right = 1.0
@@ -13,23 +110,40 @@ anchor_bottom = 1.0
 color = Color( 0.74902, 0.74902, 0.74902, 1 )
 
 [node name="LineEdit" type="LineEdit" parent="."]
-margin_left = 16.0
-margin_top = 16.0
-margin_right = 176.0
-margin_bottom = 80.0
+anchor_left = 0.027
+anchor_top = 0.022
+anchor_right = 0.293
+anchor_bottom = 0.111
+margin_left = -0.200001
+margin_top = 0.159999
+margin_right = 0.199997
+margin_bottom = 0.0799942
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_styles/normal = SubResource( 1 )
 placeholder_text = "Classe Conjuradora"
 caret_blink = true
+__meta__ = {
+"_edit_use_anchors_": true
+}
 
 [node name="HBoxContainer" type="HBoxContainer" parent="."]
-margin_left = 240.0
-margin_top = 16.0
-margin_right = 458.0
-margin_bottom = 80.0
+anchor_left = 0.4
+anchor_top = 0.022
+anchor_right = 0.76
+anchor_bottom = 0.111
+margin_top = 0.159999
+margin_right = 1.99997
+margin_bottom = 0.0799942
+__meta__ = {
+"_edit_use_anchors_": true
+}
 
 [node name="LineEdit2" type="LineEdit" parent="HBoxContainer"]
 margin_right = 70.0
 margin_bottom = 64.0
 rect_min_size = Vector2( 70, 0 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_styles/normal = SubResource( 2 )
 expand_to_text_length = true
 placeholder_text = "Hab.Conj."
 caret_blink = true
@@ -39,6 +153,8 @@ margin_left = 74.0
 margin_right = 144.0
 margin_bottom = 64.0
 rect_min_size = Vector2( 70, 0 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_styles/normal = SubResource( 3 )
 align = 1
 placeholder_text = "CD"
 caret_blink = true
@@ -48,19 +164,25 @@ margin_left = 148.0
 margin_right = 218.0
 margin_bottom = 64.0
 rect_min_size = Vector2( 70, 0 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_styles/normal = SubResource( 4 )
 align = 1
 placeholder_text = "At.Bn."
 caret_blink = true
 
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
-margin_left = 24.0
-margin_top = 104.0
-margin_right = 152.0
-margin_bottom = 274.0
+anchor_left = 0.04
+anchor_top = 0.144
+anchor_right = 0.253
+anchor_bottom = 0.381
+margin_top = 0.319992
+margin_right = 0.199982
+margin_bottom = -0.320007
 
 [node name="Label" type="Label" parent="VBoxContainer"]
 margin_right = 128.0
 margin_bottom = 14.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
 text = "Truques"
 
 [node name="TextEdit" type="TextEdit" parent="VBoxContainer"]
@@ -68,16 +190,23 @@ margin_top = 18.0
 margin_right = 128.0
 margin_bottom = 170.0
 rect_min_size = Vector2( 0, 152 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_styles/normal = SubResource( 5 )
 
 [node name="VBoxContainer2" type="VBoxContainer" parent="."]
-margin_left = 24.0
-margin_top = 288.0
-margin_right = 152.0
-margin_bottom = 458.0
+anchor_left = 0.04
+anchor_top = 0.4
+anchor_right = 0.253
+anchor_bottom = 0.636
+margin_right = 0.199982
+margin_bottom = 0.0799866
+theme = SubResource( 7 )
 
 [node name="Label" type="Label" parent="VBoxContainer2"]
 margin_right = 128.0
 margin_bottom = 14.0
+theme = SubResource( 7 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
 text = "Nivel1"
 
 [node name="TextEdit" type="TextEdit" parent="VBoxContainer2"]
@@ -85,16 +214,23 @@ margin_top = 18.0
 margin_right = 128.0
 margin_bottom = 170.0
 rect_min_size = Vector2( 0, 152 )
+theme = SubResource( 7 )
 
 [node name="VBoxContainer3" type="VBoxContainer" parent="."]
-margin_left = 24.0
-margin_top = 472.0
-margin_right = 152.0
-margin_bottom = 642.0
+anchor_left = 0.04
+anchor_top = 0.656
+anchor_right = 0.253
+anchor_bottom = 0.892
+margin_top = -0.320007
+margin_right = 0.199982
+margin_bottom = -0.23999
+theme = SubResource( 7 )
 
 [node name="Label" type="Label" parent="VBoxContainer3"]
 margin_right = 128.0
 margin_bottom = 14.0
+theme = SubResource( 7 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
 text = "Nivel 2"
 
 [node name="TextEdit" type="TextEdit" parent="VBoxContainer3"]
@@ -102,16 +238,22 @@ margin_top = 18.0
 margin_right = 128.0
 margin_bottom = 170.0
 rect_min_size = Vector2( 0, 152 )
+theme = SubResource( 7 )
 
 [node name="VBoxContainer4" type="VBoxContainer" parent="."]
-margin_left = 168.0
-margin_top = 104.0
-margin_right = 288.0
-margin_bottom = 274.0
+anchor_left = 0.28
+anchor_top = 0.144
+anchor_right = 0.48
+anchor_bottom = 0.381
+margin_top = 0.319992
+margin_bottom = -0.320007
+theme = SubResource( 7 )
 
 [node name="Label" type="Label" parent="VBoxContainer4"]
 margin_right = 120.0
 margin_bottom = 14.0
+theme = SubResource( 7 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
 text = "Nivel 3"
 
 [node name="TextEdit" type="TextEdit" parent="VBoxContainer4"]
@@ -119,16 +261,21 @@ margin_top = 18.0
 margin_right = 120.0
 margin_bottom = 170.0
 rect_min_size = Vector2( 0, 152 )
+theme = SubResource( 7 )
 
 [node name="VBoxContainer5" type="VBoxContainer" parent="."]
-margin_left = 168.0
-margin_top = 288.0
-margin_right = 288.0
-margin_bottom = 458.0
+anchor_left = 0.28
+anchor_top = 0.4
+anchor_right = 0.48
+anchor_bottom = 0.636
+margin_bottom = 0.0799866
+theme = SubResource( 7 )
 
 [node name="Label" type="Label" parent="VBoxContainer5"]
 margin_right = 120.0
 margin_bottom = 14.0
+theme = SubResource( 7 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
 text = "Nivel 4"
 
 [node name="TextEdit" type="TextEdit" parent="VBoxContainer5"]
@@ -136,16 +283,22 @@ margin_top = 18.0
 margin_right = 120.0
 margin_bottom = 170.0
 rect_min_size = Vector2( 0, 152 )
+theme = SubResource( 7 )
 
 [node name="VBoxContainer6" type="VBoxContainer" parent="."]
-margin_left = 168.0
-margin_top = 472.0
-margin_right = 288.0
-margin_bottom = 642.0
+anchor_left = 0.28
+anchor_top = 0.656
+anchor_right = 0.48
+anchor_bottom = 0.892
+margin_top = -0.320007
+margin_bottom = -0.23999
+theme = SubResource( 7 )
 
 [node name="Label" type="Label" parent="VBoxContainer6"]
 margin_right = 120.0
 margin_bottom = 14.0
+theme = SubResource( 7 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
 text = "Nivel 5"
 
 [node name="TextEdit" type="TextEdit" parent="VBoxContainer6"]
@@ -153,16 +306,24 @@ margin_top = 18.0
 margin_right = 120.0
 margin_bottom = 170.0
 rect_min_size = Vector2( 0, 152 )
+theme = SubResource( 7 )
 
 [node name="VBoxContainer7" type="VBoxContainer" parent="."]
-margin_left = 304.0
-margin_top = 104.0
-margin_right = 424.0
-margin_bottom = 274.0
+anchor_left = 0.507
+anchor_top = 0.144
+anchor_right = 0.707
+anchor_bottom = 0.381
+margin_left = -0.200012
+margin_top = 0.319992
+margin_right = -0.200012
+margin_bottom = -0.320007
+theme = SubResource( 7 )
 
 [node name="Label" type="Label" parent="VBoxContainer7"]
 margin_right = 120.0
 margin_bottom = 14.0
+theme = SubResource( 7 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
 text = "Nivel 6"
 
 [node name="TextEdit" type="TextEdit" parent="VBoxContainer7"]
@@ -170,16 +331,23 @@ margin_top = 18.0
 margin_right = 120.0
 margin_bottom = 170.0
 rect_min_size = Vector2( 0, 152 )
+theme = SubResource( 7 )
 
 [node name="VBoxContainer8" type="VBoxContainer" parent="."]
-margin_left = 304.0
-margin_top = 288.0
-margin_right = 424.0
-margin_bottom = 458.0
+anchor_left = 0.507
+anchor_top = 0.4
+anchor_right = 0.707
+anchor_bottom = 0.636
+margin_left = -0.200012
+margin_right = -0.200012
+margin_bottom = 0.0799866
+theme = SubResource( 7 )
 
 [node name="Label" type="Label" parent="VBoxContainer8"]
 margin_right = 120.0
 margin_bottom = 14.0
+theme = SubResource( 7 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
 text = "Nivel 7"
 
 [node name="TextEdit" type="TextEdit" parent="VBoxContainer8"]
@@ -187,16 +355,24 @@ margin_top = 18.0
 margin_right = 120.0
 margin_bottom = 170.0
 rect_min_size = Vector2( 0, 152 )
+theme = SubResource( 7 )
 
 [node name="VBoxContainer9" type="VBoxContainer" parent="."]
-margin_left = 304.0
-margin_top = 472.0
-margin_right = 424.0
-margin_bottom = 642.0
+anchor_left = 0.507
+anchor_top = 0.656
+anchor_right = 0.707
+anchor_bottom = 0.892
+margin_left = -0.200012
+margin_top = -0.320007
+margin_right = -0.200012
+margin_bottom = -0.23999
+theme = SubResource( 7 )
 
 [node name="Label" type="Label" parent="VBoxContainer9"]
 margin_right = 120.0
 margin_bottom = 14.0
+theme = SubResource( 7 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
 text = "Nivel 8"
 
 [node name="TextEdit" type="TextEdit" parent="VBoxContainer9"]
@@ -204,16 +380,23 @@ margin_top = 18.0
 margin_right = 120.0
 margin_bottom = 170.0
 rect_min_size = Vector2( 0, 152 )
+theme = SubResource( 7 )
 
 [node name="VBoxContainer10" type="VBoxContainer" parent="."]
-margin_left = 440.0
-margin_top = 288.0
-margin_right = 560.0
-margin_bottom = 458.0
+anchor_left = 0.733
+anchor_top = 0.4
+anchor_right = 0.933
+anchor_bottom = 0.636
+margin_left = 0.199982
+margin_right = 0.200012
+margin_bottom = 0.0799866
+theme = SubResource( 7 )
 
 [node name="Label" type="Label" parent="VBoxContainer10"]
 margin_right = 120.0
 margin_bottom = 14.0
+theme = SubResource( 7 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
 text = "Nivel 9"
 
 [node name="TextEdit" type="TextEdit" parent="VBoxContainer10"]
@@ -221,12 +404,23 @@ margin_top = 18.0
 margin_right = 120.0
 margin_bottom = 170.0
 rect_min_size = Vector2( 0, 152 )
+theme = SubResource( 7 )
 
 [node name="Voltar" type="Button" parent="."]
-margin_left = 520.0
-margin_top = 656.0
-margin_right = 585.0
-margin_bottom = 700.0
+anchor_left = 0.840333
+anchor_top = 0.899889
+anchor_right = 0.973
+anchor_bottom = 0.978
+margin_left = -0.200012
+margin_top = 0.0799561
+margin_right = 0.199951
+margin_bottom = -0.160034
+custom_styles/hover = SubResource( 8 )
+custom_styles/pressed = SubResource( 9 )
+custom_styles/normal = SubResource( 10 )
 text = "Voltar"
+__meta__ = {
+"_edit_use_anchors_": true
+}
 
 [connection signal="pressed" from="Voltar" to="." method="_on_Voltar_pressed"]

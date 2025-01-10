@@ -1,6 +1,75 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://Scripts/História.gd" type="Script" id=1]
+
+[sub_resource type="StyleBoxFlat" id=1]
+bg_color = Color( 0.74902, 0.74902, 0.74902, 1 )
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color( 0, 0, 0, 1 )
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="StyleBoxFlat" id=2]
+bg_color = Color( 0.74902, 0.74902, 0.74902, 1 )
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color( 0, 0, 0, 1 )
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="StyleBoxFlat" id=3]
+bg_color = Color( 0.74902, 0.74902, 0.74902, 1 )
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color( 0, 0, 0, 1 )
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="StyleBoxFlat" id=7]
+bg_color = Color( 0.74902, 0.74902, 0.74902, 1 )
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color( 0, 0, 0, 1 )
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="StyleBoxFlat" id=4]
+bg_color = Color( 0.0901961, 0.0901961, 0.0901961, 1 )
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="StyleBoxFlat" id=5]
+bg_color = Color( 0.192157, 0.192157, 0.192157, 1 )
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="StyleBoxFlat" id=6]
+bg_color = Color( 0.192157, 0.192157, 0.192157, 1 )
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
 
 [node name="Control" type="Control"]
 anchor_right = 1.0
@@ -22,6 +91,8 @@ margin_left = -3.05176e-05
 margin_top = 0.319998
 margin_right = 0.199951
 margin_bottom = -0.160034
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_styles/normal = SubResource( 1 )
 
 [node name="Label" type="Label" parent="."]
 anchor_left = 0.76
@@ -32,110 +103,151 @@ margin_left = -3.05176e-05
 margin_top = 0.159999
 margin_right = 0.199982
 margin_bottom = -0.240002
+custom_colors/font_color = Color( 0, 0, 0, 1 )
 text = "História"
 align = 1
 
 [node name="Aparência" type="TextEdit" parent="."]
 anchor_left = 0.027
-anchor_top = 0.2
+anchor_top = 0.0444444
 anchor_right = 0.36
-anchor_bottom = 0.511
+anchor_bottom = 0.355444
 margin_left = -0.200001
 margin_right = -1.52588e-05
 margin_bottom = 0.0799866
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_styles/normal = SubResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": true
+}
 
 [node name="Label2" type="Label" parent="."]
-anchor_left = 0.133
-anchor_top = 0.178
-anchor_right = 0.238
-anchor_bottom = 0.197
+anchor_left = 0.146333
+anchor_top = 0.0224444
+anchor_right = 0.251333
+anchor_bottom = 0.0414445
 margin_left = 0.199997
 margin_top = -0.160004
 margin_right = 0.199997
 margin_bottom = 0.159988
+custom_colors/font_color = Color( 0, 0, 0, 1 )
 text = "Aparência"
 align = 1
+__meta__ = {
+"_edit_use_anchors_": true
+}
 
 [node name="Aliados" type="TextEdit" parent="."]
 anchor_left = 0.027
 anchor_top = 0.567
-anchor_right = 0.36
+anchor_right = 0.586667
 anchor_bottom = 0.878
 margin_left = -0.200001
-margin_top = -0.240021
+margin_top = -0.23999
 margin_right = -1.52588e-05
 margin_bottom = -0.160034
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_styles/normal = SubResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": true
+}
 
 [node name="Label3" type="Label" parent="."]
-anchor_left = 0.133
+anchor_left = 0.173
 anchor_top = 0.544
-anchor_right = 0.238
+anchor_right = 0.424667
 anchor_bottom = 0.564
 margin_left = 0.199997
 margin_top = 0.319977
 margin_right = 0.199997
 margin_bottom = -0.0800171
-text = "Aliados"
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Aliados & Organizações"
 align = 1
+__meta__ = {
+"_edit_use_anchors_": true
+}
 
 [node name="GridContainer" type="GridContainer" parent="."]
-anchor_left = 0.027
+anchor_left = 0.373667
 anchor_top = 0.044
-anchor_right = 0.227
-anchor_bottom = 0.156
+anchor_right = 0.460333
+anchor_bottom = 0.222667
 margin_left = -0.200001
-margin_top = 0.319998
-margin_right = -0.200012
+margin_top = 0.32
+margin_right = -0.199997
 margin_bottom = -0.32
-columns = 2
+__meta__ = {
+"_edit_use_anchors_": true
+}
 
 [node name="LineEdit" type="LineEdit" parent="GridContainer"]
-margin_right = 58.0
-margin_bottom = 24.0
+margin_right = 52.0
+margin_bottom = 18.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_styles/normal = SubResource( 7 )
+expand_to_text_length = true
 placeholder_text = "Idade"
 
 [node name="LineEdit2" type="LineEdit" parent="GridContainer"]
-margin_left = 62.0
-margin_right = 120.0
-margin_bottom = 24.0
+margin_top = 22.0
+margin_right = 52.0
+margin_bottom = 40.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_styles/normal = SubResource( 7 )
+expand_to_text_length = true
+placeholder_text = "Altura"
+
+[node name="LineEdit3" type="LineEdit" parent="GridContainer"]
+margin_top = 44.0
+margin_right = 52.0
+margin_bottom = 62.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_styles/normal = SubResource( 7 )
+expand_to_text_length = true
+placeholder_text = "Peso"
+
+[node name="LineEdit4" type="LineEdit" parent="GridContainer"]
+margin_top = 66.0
+margin_right = 52.0
+margin_bottom = 84.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_styles/normal = SubResource( 7 )
 expand_to_text_length = true
 placeholder_text = "Cabelo"
 
-[node name="LineEdit3" type="LineEdit" parent="GridContainer"]
-margin_top = 28.0
-margin_right = 58.0
-margin_bottom = 52.0
+[node name="LineEdit5" type="LineEdit" parent="GridContainer"]
+margin_top = 88.0
+margin_right = 52.0
+margin_bottom = 106.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_styles/normal = SubResource( 7 )
+expand_to_text_length = true
 placeholder_text = "Olhos"
 
-[node name="LineEdit4" type="LineEdit" parent="GridContainer"]
-margin_left = 62.0
-margin_top = 28.0
-margin_right = 120.0
-margin_bottom = 52.0
-placeholder_text = "Pele"
-
-[node name="LineEdit5" type="LineEdit" parent="GridContainer"]
-margin_top = 56.0
-margin_right = 58.0
-margin_bottom = 80.0
-placeholder_text = "Peso"
-
 [node name="LineEdit6" type="LineEdit" parent="GridContainer"]
-margin_left = 62.0
-margin_top = 56.0
-margin_right = 120.0
-margin_bottom = 80.0
-placeholder_text = "Altura"
+margin_top = 110.0
+margin_right = 52.0
+margin_bottom = 128.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_styles/normal = SubResource( 7 )
+expand_to_text_length = true
+placeholder_text = "Pele"
 
 [node name="Voltar" type="Button" parent="."]
 anchor_left = 0.027
-anchor_top = 0.922
-anchor_right = 0.133
-anchor_bottom = 0.967
+anchor_top = 0.899778
+anchor_right = 0.16
+anchor_bottom = 0.978
 margin_left = -0.200001
 margin_top = 0.159973
-margin_right = 0.199997
-margin_bottom = 3.75995
+margin_bottom = -0.159973
+custom_styles/hover = SubResource( 4 )
+custom_styles/pressed = SubResource( 5 )
+custom_styles/normal = SubResource( 6 )
 text = "Voltar"
+__meta__ = {
+"_edit_use_anchors_": true
+}
 
 [connection signal="pressed" from="Voltar" to="." method="_on_Voltar_pressed"]

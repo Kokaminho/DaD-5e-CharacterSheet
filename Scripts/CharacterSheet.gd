@@ -43,3 +43,37 @@ func _on_PagPop_index_pressed(index):
 
 func _on_FecharProf_pressed():
 	$ProfIdi.hide()
+
+
+func save():
+	var save_sheet = {
+		"Nome" : $Nome.text ,
+		"ClasseNivel" : $ClasseNivel.text ,
+		"Raca" : $Raca.text ,
+		"Alinhamento" : $Alinhamento.text ,
+		"Antecedente" : $Antecedente.text,
+		"EXP" : $EXP.text
+	}
+	return save_sheet
+
+func SaveSheet():
+	var save_sheet = File.new()
+	save_sheet.open("user://savesheet.dat", File.WRITE)
+	save_sheet.store_var(save())
+	save_sheet.close()
+	
+func LoadSheet():
+	var save_sheet = File.new()
+	save_sheet.open("user://savesheet.dat", File.READ)
+	var saveFile = save_sheet.get_as_text()
+	save_sheet.close()
+	return saveFile
+	
+
+
+func _on_Button_pressed():
+	SaveSheet()
+
+
+func _on_Button2_pressed():
+	LoadSheet()

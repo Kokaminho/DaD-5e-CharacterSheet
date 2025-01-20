@@ -45,7 +45,6 @@ func _on_PagPop_index_pressed(index):
 
 func _on_FecharProf_pressed():
 	$ProfIdi.hide()
-<<<<<<< HEAD
 
 
 func save():
@@ -111,5 +110,3 @@ func _on_Button_pressed():
 
 func _on_Button2_pressed():
 	LoadSheet()
-=======
->>>>>>> parent of f9398c1 (Mais bunito)

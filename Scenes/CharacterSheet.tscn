@@ -1101,7 +1101,7 @@ __meta__ = {
 "_edit_use_anchors_": true
 }
 
-[node name="ClasseNivel" type="LineEdit" parent="."]
+[node name="Classe&Nível" type="LineEdit" parent="."]
 anchor_left = 0.387
 anchor_top = 0.033
 anchor_right = 0.613
@@ -1119,7 +1119,7 @@ __meta__ = {
 "_edit_use_anchors_": true
 }
 
-[node name="Raca" type="LineEdit" parent="."]
+[node name="Raça" type="LineEdit" parent="."]
 anchor_left = 0.387
 anchor_top = 0.089
 anchor_right = 0.483
@@ -2026,7 +2026,7 @@ __meta__ = {
 }
 
 [node name="VidaMáxima" type="LineEdit" parent="Vida"]
-margin_right = 183.0
+margin_right = 184.0
 margin_bottom = 18.0
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 custom_styles/normal = SubResource( 50 )
@@ -2036,7 +2036,7 @@ caret_blink = true
 
 [node name="VidaAtual" type="LineEdit" parent="Vida"]
 margin_top = 22.0
-margin_right = 183.0
+margin_right = 184.0
 margin_bottom = 40.0
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 custom_styles/normal = SubResource( 51 )
@@ -2046,7 +2046,7 @@ caret_blink = true
 
 [node name="VidaTemp" type="LineEdit" parent="Vida"]
 margin_top = 44.0
-margin_right = 183.0
+margin_right = 184.0
 margin_bottom = 62.0
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 custom_styles/normal = SubResource( 52 )
@@ -2067,7 +2067,7 @@ __meta__ = {
 }
 
 [node name="MaxDado" type="LineEdit" parent="DadosVida"]
-margin_right = 57.0
+margin_right = 58.0
 margin_bottom = 18.0
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 custom_styles/normal = SubResource( 53 )
@@ -2077,7 +2077,7 @@ caret_blink = true
 
 [node name="DadoVida" type="LineEdit" parent="DadosVida"]
 margin_top = 22.0
-margin_right = 57.0
+margin_right = 58.0
 margin_bottom = 40.0
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 custom_styles/normal = SubResource( 54 )
@@ -2240,7 +2240,7 @@ __meta__ = {
 }
 
 [node name="LineEdit" type="LineEdit" parent="PPI"]
-margin_right = 58.0
+margin_right = 57.0
 margin_bottom = 18.0
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 custom_styles/normal = SubResource( 74 )
@@ -2249,7 +2249,7 @@ placeholder_text = "Prof.Bn."
 
 [node name="LineEdit4" type="LineEdit" parent="PPI"]
 margin_top = 22.0
-margin_right = 58.0
+margin_right = 57.0
 margin_bottom = 40.0
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 custom_styles/normal = SubResource( 74 )
@@ -2258,7 +2258,7 @@ placeholder_text = "Perc.Pas"
 
 [node name="LineEdit5" type="LineEdit" parent="PPI"]
 margin_top = 44.0
-margin_right = 58.0
+margin_right = 57.0
 margin_bottom = 62.0
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 custom_styles/normal = SubResource( 74 )
@@ -2534,30 +2534,6 @@ custom_styles/pressed = SubResource( 103 )
 custom_styles/normal = SubResource( 104 )
 text = "X"
 
-[node name="Button" type="Button" parent="."]
-anchor_left = 0.293333
-anchor_top = 0.911111
-anchor_right = 0.355
-anchor_bottom = 0.911111
-margin_right = 12.0
-margin_bottom = 20.0
-text = "salvar"
-__meta__ = {
-"_edit_use_anchors_": true
-}
-
-[node name="Button2" type="Button" parent="."]
-anchor_left = 0.533333
-anchor_top = 0.911111
-anchor_right = 0.595
-anchor_bottom = 0.911111
-margin_right = 12.0
-margin_bottom = 20.0
-text = "Carregar"
-__meta__ = {
-"_edit_use_anchors_": true
-}
-
 [connection signal="pressed" from="Mais" to="." method="_on_Mais_pressed"]
 [connection signal="index_pressed" from="Mais/MaisPop" to="." method="_on_MaisPop_index_pressed"]
 [connection signal="pressed" from="Paginas" to="." method="_on_Pginas_pressed"]
@@ -2565,5 +2541,3 @@ __meta__ = {
 [connection signal="pressed" from="Inventário/FecharInv" to="." method="_on_Fechar_pressed"]
 [connection signal="pressed" from="Talentos/FecharTal" to="." method="_on_FecharTal_pressed"]
 [connection signal="pressed" from="ProfIdi/FecharProf" to="." method="_on_FecharProf_pressed"]
-[connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]
-[connection signal="pressed" from="Button2" to="." method="_on_Button2_pressed"]

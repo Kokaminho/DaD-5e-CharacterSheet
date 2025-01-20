@@ -12,8 +12,6 @@ config_version=4
 
 config/name="CharacterSheet"
 run/main_scene="res://Scenes/CharacterSheet.tscn"
-config/use_custom_user_dir=true
-config/custom_user_dir_name="CharSheet"
 config/icon="res://icon.png"
 
 [display]

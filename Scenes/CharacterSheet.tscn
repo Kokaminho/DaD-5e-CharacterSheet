@@ -1069,7 +1069,7 @@ corner_radius_top_right = 5
 corner_radius_bottom_right = 5
 corner_radius_bottom_left = 5
 
-[node name="Control" type="Control"]
+[node name="Control" type="Control" groups=["Sarva"]]
 anchor_right = 1.0
 anchor_bottom = 1.0
 script = ExtResource( 1 )
